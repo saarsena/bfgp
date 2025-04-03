@@ -1,0 +1,36 @@
+#include <entt/entt.hpp>
+#include <iostream>
+
+// Components
+struct Position {
+  int x, y;
+};
+struct Velocity {
+  int dx, dy;
+};
+
+int main() {
+  entt::registry registry;
+
+  // Create an entity and assign components
+  auto player = registry.create();
+  registry.emplace<Position>(player, 10, 20);
+  registry.emplace<Velocity>(player, 1, -1);
+
+  // Add another one
+  auto enemy = registry.create();
+  registry.emplace<Position>(enemy, 5, 5);
+  registry.emplace<Velocity>(enemy, 0, 1);
+
+  // Iterate over entities with Position + Velocity
+  registry.view<Position, Velocity>().each(
+      [](auto entity, Position& pos, Velocity& vel) {
+        pos.x += vel.dx;
+        pos.y += vel.dy;
+
+        std::cout << "Entity " << int(entity) << " moved to (" << pos.x << ", "
+                  << pos.y << ")\n";
+      });
+
+  return 0;
+}
