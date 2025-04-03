@@ -1,5 +1,5 @@
-#include "GameManager.h"
-#include "GameEvent.h"
+#include "../include/core/GameManager.h"
+#include "../include/events/GameEvent.h"
 #include "TmxImage.h"
 #include "TmxLayer.h"
 #include "TmxObject.h"

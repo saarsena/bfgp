@@ -30,6 +30,42 @@
   "output": "CMakeFiles/scheduler_demo.dir/src/main.cpp.o"
 },
 {
+  "directory": "/home/scott/projects/enttTest/build",
+  "command": "/usr/bin/c++  -I/usr/include/SDL2 -I/usr/include/rav1e -I/usr/include/svt-av1 -I/usr/include/libvmaf -I/usr/include/webp -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/sysprof-6 -I/home/scott/projects/enttTest/include -I/home/scott/projects/enttTest/deps/tmxparser/include -I/home/scott/projects/enttTest/build/deps/tmxparser/include -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o -c /home/scott/projects/enttTest/examples/EnttEventExample.cpp",
+  "file": "/home/scott/projects/enttTest/examples/EnttEventExample.cpp",
+  "output": "CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o"
+},
+{
+  "directory": "/home/scott/projects/enttTest/build",
+  "command": "/usr/bin/c++  -I/usr/include/SDL2 -I/usr/include/rav1e -I/usr/include/svt-av1 -I/usr/include/libvmaf -I/usr/include/webp -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/sysprof-6 -I/home/scott/projects/enttTest/include -I/home/scott/projects/enttTest/deps/tmxparser/include -I/home/scott/projects/enttTest/build/deps/tmxparser/include -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o -c /home/scott/projects/enttTest/examples/SchedulerExample.cpp",
+  "file": "/home/scott/projects/enttTest/examples/SchedulerExample.cpp",
+  "output": "CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o"
+},
+{
+  "directory": "/home/scott/projects/enttTest/build",
+  "command": "/usr/bin/c++  -I/usr/include/SDL2 -I/usr/include/rav1e -I/usr/include/svt-av1 -I/usr/include/libvmaf -I/usr/include/webp -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/sysprof-6 -I/home/scott/projects/enttTest/include -I/home/scott/projects/enttTest/deps/tmxparser/include -I/home/scott/projects/enttTest/build/deps/tmxparser/include -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles/scheduler_example.dir/examples/SchedulerExample.cpp.o -c /home/scott/projects/enttTest/examples/SchedulerExample.cpp",
+  "file": "/home/scott/projects/enttTest/examples/SchedulerExample.cpp",
+  "output": "CMakeFiles/scheduler_example.dir/examples/SchedulerExample.cpp.o"
+},
+{
+  "directory": "/home/scott/projects/enttTest/build",
+  "command": "/usr/bin/c++  -I/usr/include/SDL2 -I/usr/include/rav1e -I/usr/include/svt-av1 -I/usr/include/libvmaf -I/usr/include/webp -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/sysprof-6 -I/home/scott/projects/enttTest/include -I/home/scott/projects/enttTest/deps/tmxparser/include -I/home/scott/projects/enttTest/build/deps/tmxparser/include -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles/scheduler_example.dir/examples/mains/scheduler_example_main.cpp.o -c /home/scott/projects/enttTest/examples/mains/scheduler_example_main.cpp",
+  "file": "/home/scott/projects/enttTest/examples/mains/scheduler_example_main.cpp",
+  "output": "CMakeFiles/scheduler_example.dir/examples/mains/scheduler_example_main.cpp.o"
+},
+{
+  "directory": "/home/scott/projects/enttTest/build",
+  "command": "/usr/bin/c++  -I/usr/include/SDL2 -I/usr/include/rav1e -I/usr/include/svt-av1 -I/usr/include/libvmaf -I/usr/include/webp -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/sysprof-6 -I/home/scott/projects/enttTest/include -I/home/scott/projects/enttTest/deps/tmxparser/include -I/home/scott/projects/enttTest/build/deps/tmxparser/include -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles/entt_event_example.dir/examples/EnttEventExample.cpp.o -c /home/scott/projects/enttTest/examples/EnttEventExample.cpp",
+  "file": "/home/scott/projects/enttTest/examples/EnttEventExample.cpp",
+  "output": "CMakeFiles/entt_event_example.dir/examples/EnttEventExample.cpp.o"
+},
+{
+  "directory": "/home/scott/projects/enttTest/build",
+  "command": "/usr/bin/c++  -I/usr/include/SDL2 -I/usr/include/rav1e -I/usr/include/svt-av1 -I/usr/include/libvmaf -I/usr/include/webp -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/sysprof-6 -I/home/scott/projects/enttTest/include -I/home/scott/projects/enttTest/deps/tmxparser/include -I/home/scott/projects/enttTest/build/deps/tmxparser/include -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles/entt_event_example.dir/examples/mains/entt_event_example_main.cpp.o -c /home/scott/projects/enttTest/examples/mains/entt_event_example_main.cpp",
+  "file": "/home/scott/projects/enttTest/examples/mains/entt_event_example_main.cpp",
+  "output": "CMakeFiles/entt_event_example.dir/examples/mains/entt_event_example_main.cpp.o"
+},
+{
   "directory": "/home/scott/projects/enttTest/build/deps/tmxparser",
   "command": "/usr/bin/c++ -Dtmxparser_EXPORTS -I/usr/include/SDL2 -I/usr/include/rav1e -I/usr/include/svt-av1 -I/usr/include/libvmaf -I/usr/include/webp -I/usr/include/freetype2 -I/usr/include/libpng16 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib64/glib-2.0/include -I/usr/include/sysprof-6 -I/home/scott/projects/enttTest/include -I/home/scott/projects/enttTest/deps/tmxparser/include -I/home/scott/projects/enttTest/build/deps/tmxparser/include -std=gnu++20 -fPIC -Wall -Wextra -Wpedantic -pedantic -Wno-error=missing-prototypes -Wno-error=strict-prototypes -Wno-error=old-style-definition -Wno-error -o CMakeFiles/tmxparser.dir/src/TmxColor.cpp.o -c /home/scott/projects/enttTest/deps/tmxparser/src/TmxColor.cpp",
   "file": "/home/scott/projects/enttTest/deps/tmxparser/src/TmxColor.cpp",

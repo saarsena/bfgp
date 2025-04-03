@@ -139,13 +139,43 @@ CMakeFiles/scheduler_demo.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scheduler_demo.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scott/projects/enttTest/src/main.cpp -o CMakeFiles/scheduler_demo.dir/src/main.cpp.s
 
+CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o: CMakeFiles/scheduler_demo.dir/flags.make
+CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o: /home/scott/projects/enttTest/examples/EnttEventExample.cpp
+CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o: CMakeFiles/scheduler_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o -MF CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o.d -o CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o -c /home/scott/projects/enttTest/examples/EnttEventExample.cpp
+
+CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/scott/projects/enttTest/examples/EnttEventExample.cpp > CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.i
+
+CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scott/projects/enttTest/examples/EnttEventExample.cpp -o CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.s
+
+CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o: CMakeFiles/scheduler_demo.dir/flags.make
+CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o: /home/scott/projects/enttTest/examples/SchedulerExample.cpp
+CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o: CMakeFiles/scheduler_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o -MF CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o.d -o CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o -c /home/scott/projects/enttTest/examples/SchedulerExample.cpp
+
+CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/scott/projects/enttTest/examples/SchedulerExample.cpp > CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.i
+
+CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scott/projects/enttTest/examples/SchedulerExample.cpp -o CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.s
+
 # Object files for target scheduler_demo
 scheduler_demo_OBJECTS = \
 "CMakeFiles/scheduler_demo.dir/src/GameManager.cpp.o" \
 "CMakeFiles/scheduler_demo.dir/src/Player.cpp.o" \
 "CMakeFiles/scheduler_demo.dir/src/Tile.cpp.o" \
 "CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.o" \
-"CMakeFiles/scheduler_demo.dir/src/main.cpp.o"
+"CMakeFiles/scheduler_demo.dir/src/main.cpp.o" \
+"CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o" \
+"CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o"
 
 # External object files for target scheduler_demo
 scheduler_demo_EXTERNAL_OBJECTS =
@@ -155,10 +185,12 @@ scheduler_demo: CMakeFiles/scheduler_demo.dir/src/Player.cpp.o
 scheduler_demo: CMakeFiles/scheduler_demo.dir/src/Tile.cpp.o
 scheduler_demo: CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.o
 scheduler_demo: CMakeFiles/scheduler_demo.dir/src/main.cpp.o
+scheduler_demo: CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o
+scheduler_demo: CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o
 scheduler_demo: CMakeFiles/scheduler_demo.dir/build.make
 scheduler_demo: deps/tmxparser/libtmxparser.so.2.1.0
 scheduler_demo: CMakeFiles/scheduler_demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable scheduler_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable scheduler_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/scheduler_demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

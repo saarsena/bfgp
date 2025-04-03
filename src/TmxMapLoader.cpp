@@ -1,4 +1,4 @@
-#include "TmxMapLoader.h"
+#include "../include/core/TmxMapLoader.h"
 
 #include <algorithm>
 #include <iostream>

@@ -1,8 +1,8 @@
 CMakeFiles/scheduler_demo.dir/src/Player.cpp.o: \
  /home/scott/projects/enttTest/src/Player.cpp /usr/include/stdc-predef.h \
- /home/scott/projects/enttTest/include/Player.h \
- /home/scott/projects/enttTest/include/EventBus.h \
- /home/scott/projects/enttTest/include/GameEvent.h \
+ /home/scott/projects/enttTest/src/../include/core/Player.h \
+ /home/scott/projects/enttTest/src/../include/core/../events/EventBus.h \
+ /home/scott/projects/enttTest/src/../include/core/../events/GameEvent.h \
  /usr/include/c++/14/functional \
  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

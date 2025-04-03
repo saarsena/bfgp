@@ -175,6 +175,32 @@ scheduler_demo/fast:
 .PHONY : scheduler_demo/fast
 
 #=============================================================================
+# Target rules for targets named scheduler_example
+
+# Build rule for target.
+scheduler_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scheduler_example
+.PHONY : scheduler_example
+
+# fast build rule for target.
+scheduler_example/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/build
+.PHONY : scheduler_example/fast
+
+#=============================================================================
+# Target rules for targets named entt_event_example
+
+# Build rule for target.
+entt_event_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 entt_event_example
+.PHONY : entt_event_example
+
+# fast build rule for target.
+entt_event_example/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/entt_event_example.dir/build.make CMakeFiles/entt_event_example.dir/build
+.PHONY : entt_event_example/fast
+
+#=============================================================================
 # Target rules for targets named tmxparser
 
 # Build rule for target.
@@ -186,6 +212,108 @@ tmxparser: cmake_check_build_system
 tmxparser/fast:
 	$(MAKE) $(MAKESILENT) -f deps/tmxparser/CMakeFiles/tmxparser.dir/build.make deps/tmxparser/CMakeFiles/tmxparser.dir/build
 .PHONY : tmxparser/fast
+
+examples/EnttEventExample.o: examples/EnttEventExample.cpp.o
+.PHONY : examples/EnttEventExample.o
+
+# target to build an object file
+examples/EnttEventExample.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/entt_event_example.dir/build.make CMakeFiles/entt_event_example.dir/examples/EnttEventExample.cpp.o
+.PHONY : examples/EnttEventExample.cpp.o
+
+examples/EnttEventExample.i: examples/EnttEventExample.cpp.i
+.PHONY : examples/EnttEventExample.i
+
+# target to preprocess a source file
+examples/EnttEventExample.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/entt_event_example.dir/build.make CMakeFiles/entt_event_example.dir/examples/EnttEventExample.cpp.i
+.PHONY : examples/EnttEventExample.cpp.i
+
+examples/EnttEventExample.s: examples/EnttEventExample.cpp.s
+.PHONY : examples/EnttEventExample.s
+
+# target to generate assembly for a file
+examples/EnttEventExample.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/entt_event_example.dir/build.make CMakeFiles/entt_event_example.dir/examples/EnttEventExample.cpp.s
+.PHONY : examples/EnttEventExample.cpp.s
+
+examples/SchedulerExample.o: examples/SchedulerExample.cpp.o
+.PHONY : examples/SchedulerExample.o
+
+# target to build an object file
+examples/SchedulerExample.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/examples/SchedulerExample.cpp.o
+.PHONY : examples/SchedulerExample.cpp.o
+
+examples/SchedulerExample.i: examples/SchedulerExample.cpp.i
+.PHONY : examples/SchedulerExample.i
+
+# target to preprocess a source file
+examples/SchedulerExample.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/examples/SchedulerExample.cpp.i
+.PHONY : examples/SchedulerExample.cpp.i
+
+examples/SchedulerExample.s: examples/SchedulerExample.cpp.s
+.PHONY : examples/SchedulerExample.s
+
+# target to generate assembly for a file
+examples/SchedulerExample.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/examples/SchedulerExample.cpp.s
+.PHONY : examples/SchedulerExample.cpp.s
+
+examples/mains/entt_event_example_main.o: examples/mains/entt_event_example_main.cpp.o
+.PHONY : examples/mains/entt_event_example_main.o
+
+# target to build an object file
+examples/mains/entt_event_example_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/entt_event_example.dir/build.make CMakeFiles/entt_event_example.dir/examples/mains/entt_event_example_main.cpp.o
+.PHONY : examples/mains/entt_event_example_main.cpp.o
+
+examples/mains/entt_event_example_main.i: examples/mains/entt_event_example_main.cpp.i
+.PHONY : examples/mains/entt_event_example_main.i
+
+# target to preprocess a source file
+examples/mains/entt_event_example_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/entt_event_example.dir/build.make CMakeFiles/entt_event_example.dir/examples/mains/entt_event_example_main.cpp.i
+.PHONY : examples/mains/entt_event_example_main.cpp.i
+
+examples/mains/entt_event_example_main.s: examples/mains/entt_event_example_main.cpp.s
+.PHONY : examples/mains/entt_event_example_main.s
+
+# target to generate assembly for a file
+examples/mains/entt_event_example_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/entt_event_example.dir/build.make CMakeFiles/entt_event_example.dir/examples/mains/entt_event_example_main.cpp.s
+.PHONY : examples/mains/entt_event_example_main.cpp.s
+
+examples/mains/scheduler_example_main.o: examples/mains/scheduler_example_main.cpp.o
+.PHONY : examples/mains/scheduler_example_main.o
+
+# target to build an object file
+examples/mains/scheduler_example_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/examples/mains/scheduler_example_main.cpp.o
+.PHONY : examples/mains/scheduler_example_main.cpp.o
+
+examples/mains/scheduler_example_main.i: examples/mains/scheduler_example_main.cpp.i
+.PHONY : examples/mains/scheduler_example_main.i
+
+# target to preprocess a source file
+examples/mains/scheduler_example_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/examples/mains/scheduler_example_main.cpp.i
+.PHONY : examples/mains/scheduler_example_main.cpp.i
+
+examples/mains/scheduler_example_main.s: examples/mains/scheduler_example_main.cpp.s
+.PHONY : examples/mains/scheduler_example_main.s
+
+# target to generate assembly for a file
+examples/mains/scheduler_example_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/examples/mains/scheduler_example_main.cpp.s
+.PHONY : examples/mains/scheduler_example_main.cpp.s
 
 src/GameManager.o: src/GameManager.cpp.o
 .PHONY : src/GameManager.o
@@ -319,8 +447,22 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... entt_event_example"
 	@echo "... scheduler_demo"
+	@echo "... scheduler_example"
 	@echo "... tmxparser"
+	@echo "... examples/EnttEventExample.o"
+	@echo "... examples/EnttEventExample.i"
+	@echo "... examples/EnttEventExample.s"
+	@echo "... examples/SchedulerExample.o"
+	@echo "... examples/SchedulerExample.i"
+	@echo "... examples/SchedulerExample.s"
+	@echo "... examples/mains/entt_event_example_main.o"
+	@echo "... examples/mains/entt_event_example_main.i"
+	@echo "... examples/mains/entt_event_example_main.s"
+	@echo "... examples/mains/scheduler_example_main.o"
+	@echo "... examples/mains/scheduler_example_main.i"
+	@echo "... examples/mains/scheduler_example_main.s"
 	@echo "... src/GameManager.o"
 	@echo "... src/GameManager.i"
 	@echo "... src/GameManager.s"

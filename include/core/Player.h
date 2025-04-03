@@ -1,5 +1,5 @@
 #pragma once
-#include "EventBus.h"
+#include "../events/EventBus.h"
 #include <SDL.h>
 
 class Player {
@@ -9,7 +9,7 @@ public:
   void update();
   void render(SDL_Renderer *renderer);
 
-  // New movement method that publishes events
+  // Movement method that publishes events
   bool move(int dx, int dy, EventBus &bus);
 
   // Getters

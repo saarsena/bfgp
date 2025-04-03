@@ -1,5 +1,5 @@
 #pragma once
-#include "EventBus.h"
+#include "../events/EventBus.h"
 #include "Player.h"
 #include "Tile.h"
 #include "TmxMapLoader.h"

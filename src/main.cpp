@@ -1,93 +1,71 @@
 // main.cpp (ECS combat + tick loop + status effects + trigger system)
-#include "GameManager.h"
-#include "TmxMapLoader.h"
-#include "TmxObject.h"
-#include "TmxObjectGroup.h"
+#include "../include/core/Components.h"
+#include "../include/core/GameManager.h"
+#include "../include/core/TmxMapLoader.h"
+#include "../include/scheduler/Scheduler.h"
 #include <entt/entt.hpp>
 #include <functional>
 #include <iostream>
-#include <queue>
 #include <string>
 #include <thread>
-
-// === Components ===
-struct Name {
-  std::string value;
-};
-struct Position {
-  int x = 0, y = 0;
-};
-struct Health {
-  int current = 100;
-};
-struct Attack {
-  int damage = 5;
-  int speed = 4;
-}; // speed in ticks
-struct Movement {
-  int speed = 2;
-  int lastMoveTick = 0;
-};
-struct PlayerTag {};
-
-// Status Effect: Poison
-struct Poisoned {
-  int ticksRemaining = 3;
-  int damagePerTick = 2;
-  int tickRate = 2;
-};
-
-// Trigger: Call for Help
-struct CallForHelpOnHit {
-  bool triggered = false;
-};
-
-// AI Trigger: Join fight if called
-struct AddSpawnTrigger {
-  bool ready = true;
-};
 
 // === Direction enum (optional movement logic) ===
 enum class Direction { NONE, UP, DOWN, LEFT, RIGHT };
 
-// === Scheduled Action ===
-struct ScheduledAction {
-  int tick;
-  entt::entity entity;
-  std::function<void(entt::entity, entt::registry &)> action;
+// Forward declarations of example classes
+class SchedulerExample;
+class EnttEventExample;
 
-  bool operator<(const ScheduledAction &other) const {
-    return tick > other.tick; // min-heap
-  }
-};
+// Implementation of example runner functions
+#include "../examples/SchedulerExample.h"
+void runSchedulerExamples() {
+  SchedulerExample example;
+  example.run();
+}
 
-// === Scheduler ===
-class Scheduler {
-public:
-  void schedule(const ScheduledAction &action) { queue.push(action); }
+#include "../examples/EnttEventExample.h"
+void runEnttEventExamples() {
+  EnttEventExample example;
+  example.run();
+}
 
-  void update(int current_tick, entt::registry &registry) {
-    while (!queue.empty() && queue.top().tick <= current_tick) {
-      auto action = queue.top();
-      queue.pop();
-      action.action(action.entity, registry);
-    }
-  }
-
-private:
-  std::priority_queue<ScheduledAction> queue;
-};
-
-// === Main ===
-int main() {
+// Function to run the game
+void runGame() {
   GameManager game;
 
   if (!game.init()) {
     std::cerr << "Failed to initialize game!" << std::endl;
-    return 1;
+    return;
   }
 
   game.run();
+}
+
+int main(int argc, char *argv[]) {
+  // Parse command line arguments
+  if (argc > 1) {
+    std::string arg = argv[1];
+
+    if (arg == "--scheduler") {
+      runSchedulerExamples();
+      return 0;
+    } else if (arg == "--events") {
+      runEnttEventExamples();
+      return 0;
+    } else if (arg == "--help") {
+      std::cout << "Usage: " << argv[0] << " [option]" << std::endl;
+      std::cout << "Options:" << std::endl;
+      std::cout << "  --scheduler    Run scheduler system examples"
+                << std::endl;
+      std::cout << "  --events       Run event system examples" << std::endl;
+      std::cout << "  --help         Show this help message" << std::endl;
+      std::cout << "  (no option)    Run the main game" << std::endl;
+      return 0;
+    }
+  }
+
+  // Default: run the game
+  runGame();
 
   return 0;
 }

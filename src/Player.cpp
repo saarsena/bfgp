@@ -1,5 +1,5 @@
-#include "Player.h"
-#include "GameEvent.h"
+#include "../include/core/Player.h"
+#include "../include/events/GameEvent.h"
 #include <SDL.h>
 
 Player::Player(int tileX, int tileY, SDL_Texture *texture, int tileSize)

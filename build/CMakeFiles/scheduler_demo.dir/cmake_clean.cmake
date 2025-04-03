@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o"
+  "CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o.d"
+  "CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o"
+  "CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o.d"
   "CMakeFiles/scheduler_demo.dir/src/GameManager.cpp.o"
   "CMakeFiles/scheduler_demo.dir/src/GameManager.cpp.o.d"
   "CMakeFiles/scheduler_demo.dir/src/Player.cpp.o"

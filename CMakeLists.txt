@@ -32,9 +32,23 @@ add_subdirectory(deps/tmxparser)
 
 # Grab all .cpp source files
 file(GLOB SRC_FILES ${CMAKE_SOURCE_DIR}/src/*.cpp)
+file(GLOB EXAMPLE_SRC_FILES ${CMAKE_SOURCE_DIR}/examples/*.cpp)
 
-# Executable
-add_executable(scheduler_demo ${SRC_FILES})
+# Main executable (include example sources here)
+add_executable(scheduler_demo 
+    ${SRC_FILES}
+    ${EXAMPLE_SRC_FILES}
+)
+
+# Standalone example executables
+add_executable(scheduler_example 
+    examples/SchedulerExample.cpp
+    examples/mains/scheduler_example_main.cpp
+)
+add_executable(entt_event_example 
+    examples/EnttEventExample.cpp
+    examples/mains/entt_event_example_main.cpp
+)
 
 # Link all necessary libs
 target_link_libraries(scheduler_demo
@@ -43,4 +57,12 @@ target_link_libraries(scheduler_demo
     ${SDL2_IMAGE_LIBRARIES}
     ${SDL2_TTF_LIBRARIES}
     ${SDL2_MIXER_LIBRARIES}
+)
+
+# Link for the standalone examples
+target_link_libraries(scheduler_example
+    tmxparser
+)
+target_link_libraries(entt_event_example
+    tmxparser
 )
