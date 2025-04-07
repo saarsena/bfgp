@@ -1,4 +1,4 @@
-#include "SchedulerExample.h"
+#include "../include/core/SchedulerExample.h"
 
 void SchedulerExample::runSchedulerExample() {
   std::cout << "=== Scheduler System Example ===" << std::endl;
@@ -44,12 +44,29 @@ void SchedulerExample::runSchedulerExample() {
                                              << std::endl;
                                  });
 
-  SchedulerUtils::scheduleAttack(scheduler, player, enemy, 20, 7,
-                                 [](entt::entity, entt::entity, int damage) {
-                                   std::cout << "Player attacks enemy for "
-                                             << damage << " damage!"
-                                             << std::endl;
-                                 });
+  // Schedule an attack with an onComplete callback
+  scheduler.schedule(
+      7, player,
+      // Main action
+      [enemy](entt::entity attacker, entt::registry &reg) {
+        if (reg.valid(attacker) && reg.valid(enemy)) {
+          auto &enemyHealth = reg.get<Health>(enemy);
+          enemyHealth.current -= 20;
+          std::cout << "Player attacks enemy for 20 damage!" << std::endl;
+        }
+      },
+      // onComplete callback
+      [enemy](ActionID id, entt::entity attacker, entt::registry &reg,
+              entt::dispatcher &disp) {
+        if (reg.valid(attacker) && reg.valid(enemy)) {
+          // Check if enemy health is low and enqueue a follow-up event
+          auto &enemyHealth = reg.get<Health>(enemy);
+          if (enemyHealth.current < 20) {
+            std::cout << "Enemy is critically wounded!" << std::endl;
+            disp.enqueue<GameEvents::CombatEndEvent>(attacker, false);
+          }
+        }
+      });
 
   // Schedule poison damage over time on the player
   SchedulerUtils::scheduleDamageOverTime(
@@ -61,7 +78,33 @@ void SchedulerExample::runSchedulerExample() {
   // Run the simulation for 10 ticks
   for (int tick = 1; tick <= 10; ++tick) {
     std::cout << "\n-- Tick " << tick << " --" << std::endl;
-    scheduler.update(tick, registry);
+
+    // Create a dispatcher to handle action completion events
+    entt::dispatcher dispatcher;
+
+    // Connect a listener for ActionCompletedEvent
+    dispatcher.sink<GameEvents::ActionCompletedEvent>()
+        .connect<[](const GameEvents::ActionCompletedEvent &event) {
+          std::cout << "Action " << event.actionId << " completed for entity "
+                    << static_cast<int>(event.entity) << std::endl;
+        }>();
+
+    // Connect a listener for CombatEndEvent
+    dispatcher.sink<GameEvents::CombatEndEvent>()
+        .connect<[](const GameEvents::CombatEndEvent &event) {
+          std::cout << "Combat ended! "
+                    << (event.fled
+                            ? "Someone fled."
+                            : ("Winner is entity " +
+                               std::to_string(static_cast<int>(event.winner))))
+                    << std::endl;
+        }>();
+
+    // Update the scheduler with the dispatcher
+    scheduler.update(tick, registry, dispatcher);
+
+    // Process all triggered events
+    dispatcher.update();
 
     // Print health after each tick
     if (registry.valid(player)) {
@@ -113,7 +156,69 @@ void SchedulerExample::runTimedEventExample() {
   }
 }
 
+void SchedulerExample::runEventIntegrationExample() {
+  std::cout << "\n=== Scheduler Event Integration Example ===" << std::endl;
+
+  // Create registry, scheduler, and dispatcher
+  entt::registry registry;
+  Scheduler scheduler;
+  entt::dispatcher dispatcher;
+
+  // Connect event handlers
+  dispatcher.sink<GameEvents::ActionCompletedEvent>()
+      .connect<[](const GameEvents::ActionCompletedEvent &event) {
+        std::cout << "Action " << event.actionId << " completed for entity "
+                  << static_cast<int>(event.entity) << std::endl;
+      }>();
+
+  dispatcher.sink<GameEvents::EntityDamagedEvent>()
+      .connect<[](const GameEvents::EntityDamagedEvent &event) {
+        std::cout << "Entity " << static_cast<int>(event.entity)
+                  << " damaged for " << event.damage << " points!" << std::endl;
+      }>();
+
+  // Create entities
+  auto player = registry.create();
+  registry.emplace<Health>(player, 100, 100);
+
+  auto enemy = registry.create();
+  registry.emplace<Health>(enemy, 50, 50);
+
+  // Schedule an action with event publication via onComplete
+  scheduler.schedule(
+      2, player,
+      // Main action
+      [enemy](entt::entity attacker, entt::registry &reg) {
+        // Apply damage
+        auto &health = reg.get<Health>(enemy);
+        health.current -= 15;
+        std::cout << "Player strikes enemy for 15 damage" << std::endl;
+      },
+      // onComplete callback
+      [enemy](ActionID id, entt::entity attacker, entt::registry &reg,
+              entt::dispatcher &disp) {
+        // Publish an event about the damage
+        disp.enqueue<GameEvents::EntityDamagedEvent>(enemy,    // entity damaged
+                                                     15,       // damage amount
+                                                     attacker, // source
+                                                     "physical" // damage type
+        );
+      });
+
+  // Run for 3 ticks
+  for (int tick = 1; tick <= 3; ++tick) {
+    std::cout << "\n-- Tick " << tick << " --" << std::endl;
+
+    // Update scheduler with dispatcher
+    scheduler.update(tick, registry, dispatcher);
+
+    // Process all events
+    dispatcher.update();
+  }
+}
+
 void SchedulerExample::run() {
   runSchedulerExample();
   runTimedEventExample();
+  runEventIntegrationExample();
 }

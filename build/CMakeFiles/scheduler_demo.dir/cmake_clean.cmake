@@ -1,10 +1,14 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.o"
+  "CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.o.d"
   "CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o"
   "CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o.d"
   "CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o"
   "CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o.d"
   "CMakeFiles/scheduler_demo.dir/src/GameManager.cpp.o"
   "CMakeFiles/scheduler_demo.dir/src/GameManager.cpp.o.d"
+  "CMakeFiles/scheduler_demo.dir/src/Mob.cpp.o"
+  "CMakeFiles/scheduler_demo.dir/src/Mob.cpp.o.d"
   "CMakeFiles/scheduler_demo.dir/src/Player.cpp.o"
   "CMakeFiles/scheduler_demo.dir/src/Player.cpp.o.d"
   "CMakeFiles/scheduler_demo.dir/src/Tile.cpp.o"
@@ -13,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.o.d"
   "CMakeFiles/scheduler_demo.dir/src/main.cpp.o"
   "CMakeFiles/scheduler_demo.dir/src/main.cpp.o.d"
+  "CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.o"
+  "CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.o.d"
   "scheduler_demo"
   "scheduler_demo.pdb"
 )

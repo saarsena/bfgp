@@ -83,10 +83,24 @@ CMakeFiles/scheduler_demo.dir/src/GameManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scheduler_demo.dir/src/GameManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scott/projects/enttTest/src/GameManager.cpp -o CMakeFiles/scheduler_demo.dir/src/GameManager.cpp.s
 
+CMakeFiles/scheduler_demo.dir/src/Mob.cpp.o: CMakeFiles/scheduler_demo.dir/flags.make
+CMakeFiles/scheduler_demo.dir/src/Mob.cpp.o: /home/scott/projects/enttTest/src/Mob.cpp
+CMakeFiles/scheduler_demo.dir/src/Mob.cpp.o: CMakeFiles/scheduler_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/scheduler_demo.dir/src/Mob.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scheduler_demo.dir/src/Mob.cpp.o -MF CMakeFiles/scheduler_demo.dir/src/Mob.cpp.o.d -o CMakeFiles/scheduler_demo.dir/src/Mob.cpp.o -c /home/scott/projects/enttTest/src/Mob.cpp
+
+CMakeFiles/scheduler_demo.dir/src/Mob.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scheduler_demo.dir/src/Mob.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/scott/projects/enttTest/src/Mob.cpp > CMakeFiles/scheduler_demo.dir/src/Mob.cpp.i
+
+CMakeFiles/scheduler_demo.dir/src/Mob.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scheduler_demo.dir/src/Mob.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scott/projects/enttTest/src/Mob.cpp -o CMakeFiles/scheduler_demo.dir/src/Mob.cpp.s
+
 CMakeFiles/scheduler_demo.dir/src/Player.cpp.o: CMakeFiles/scheduler_demo.dir/flags.make
 CMakeFiles/scheduler_demo.dir/src/Player.cpp.o: /home/scott/projects/enttTest/src/Player.cpp
 CMakeFiles/scheduler_demo.dir/src/Player.cpp.o: CMakeFiles/scheduler_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/scheduler_demo.dir/src/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/scheduler_demo.dir/src/Player.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scheduler_demo.dir/src/Player.cpp.o -MF CMakeFiles/scheduler_demo.dir/src/Player.cpp.o.d -o CMakeFiles/scheduler_demo.dir/src/Player.cpp.o -c /home/scott/projects/enttTest/src/Player.cpp
 
 CMakeFiles/scheduler_demo.dir/src/Player.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/scheduler_demo.dir/src/Player.cpp.s: cmake_force
 CMakeFiles/scheduler_demo.dir/src/Tile.cpp.o: CMakeFiles/scheduler_demo.dir/flags.make
 CMakeFiles/scheduler_demo.dir/src/Tile.cpp.o: /home/scott/projects/enttTest/src/Tile.cpp
 CMakeFiles/scheduler_demo.dir/src/Tile.cpp.o: CMakeFiles/scheduler_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/scheduler_demo.dir/src/Tile.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/scheduler_demo.dir/src/Tile.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scheduler_demo.dir/src/Tile.cpp.o -MF CMakeFiles/scheduler_demo.dir/src/Tile.cpp.o.d -o CMakeFiles/scheduler_demo.dir/src/Tile.cpp.o -c /home/scott/projects/enttTest/src/Tile.cpp
 
 CMakeFiles/scheduler_demo.dir/src/Tile.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/scheduler_demo.dir/src/Tile.cpp.s: cmake_force
 CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.o: CMakeFiles/scheduler_demo.dir/flags.make
 CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.o: /home/scott/projects/enttTest/src/TmxMapLoader.cpp
 CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.o: CMakeFiles/scheduler_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.o -MF CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.o.d -o CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.o -c /home/scott/projects/enttTest/src/TmxMapLoader.cpp
 
 CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.s: cmake_force
 CMakeFiles/scheduler_demo.dir/src/main.cpp.o: CMakeFiles/scheduler_demo.dir/flags.make
 CMakeFiles/scheduler_demo.dir/src/main.cpp.o: /home/scott/projects/enttTest/src/main.cpp
 CMakeFiles/scheduler_demo.dir/src/main.cpp.o: CMakeFiles/scheduler_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/scheduler_demo.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/scheduler_demo.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scheduler_demo.dir/src/main.cpp.o -MF CMakeFiles/scheduler_demo.dir/src/main.cpp.o.d -o CMakeFiles/scheduler_demo.dir/src/main.cpp.o -c /home/scott/projects/enttTest/src/main.cpp
 
 CMakeFiles/scheduler_demo.dir/src/main.cpp.i: cmake_force
@@ -139,10 +153,38 @@ CMakeFiles/scheduler_demo.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scheduler_demo.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scott/projects/enttTest/src/main.cpp -o CMakeFiles/scheduler_demo.dir/src/main.cpp.s
 
+CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.o: CMakeFiles/scheduler_demo.dir/flags.make
+CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.o: /home/scott/projects/enttTest/src/walkerdungeon.cpp
+CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.o: CMakeFiles/scheduler_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.o -MF CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.o.d -o CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.o -c /home/scott/projects/enttTest/src/walkerdungeon.cpp
+
+CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/scott/projects/enttTest/src/walkerdungeon.cpp > CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.i
+
+CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scott/projects/enttTest/src/walkerdungeon.cpp -o CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.s
+
+CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.o: CMakeFiles/scheduler_demo.dir/flags.make
+CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.o: /home/scott/projects/enttTest/examples/CollisionTest.cpp
+CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.o: CMakeFiles/scheduler_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.o -MF CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.o.d -o CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.o -c /home/scott/projects/enttTest/examples/CollisionTest.cpp
+
+CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/scott/projects/enttTest/examples/CollisionTest.cpp > CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.i
+
+CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/scott/projects/enttTest/examples/CollisionTest.cpp -o CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.s
+
 CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o: CMakeFiles/scheduler_demo.dir/flags.make
 CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o: /home/scott/projects/enttTest/examples/EnttEventExample.cpp
 CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o: CMakeFiles/scheduler_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o -MF CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o.d -o CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o -c /home/scott/projects/enttTest/examples/EnttEventExample.cpp
 
 CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.i: cmake_force
@@ -156,7 +198,7 @@ CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.s: cmake_force
 CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o: CMakeFiles/scheduler_demo.dir/flags.make
 CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o: /home/scott/projects/enttTest/examples/SchedulerExample.cpp
 CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o: CMakeFiles/scheduler_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o -MF CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o.d -o CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o -c /home/scott/projects/enttTest/examples/SchedulerExample.cpp
 
 CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.i: cmake_force
@@ -170,10 +212,13 @@ CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.s: cmake_force
 # Object files for target scheduler_demo
 scheduler_demo_OBJECTS = \
 "CMakeFiles/scheduler_demo.dir/src/GameManager.cpp.o" \
+"CMakeFiles/scheduler_demo.dir/src/Mob.cpp.o" \
 "CMakeFiles/scheduler_demo.dir/src/Player.cpp.o" \
 "CMakeFiles/scheduler_demo.dir/src/Tile.cpp.o" \
 "CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.o" \
 "CMakeFiles/scheduler_demo.dir/src/main.cpp.o" \
+"CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.o" \
+"CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.o" \
 "CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o" \
 "CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o"
 
@@ -181,16 +226,19 @@ scheduler_demo_OBJECTS = \
 scheduler_demo_EXTERNAL_OBJECTS =
 
 scheduler_demo: CMakeFiles/scheduler_demo.dir/src/GameManager.cpp.o
+scheduler_demo: CMakeFiles/scheduler_demo.dir/src/Mob.cpp.o
 scheduler_demo: CMakeFiles/scheduler_demo.dir/src/Player.cpp.o
 scheduler_demo: CMakeFiles/scheduler_demo.dir/src/Tile.cpp.o
 scheduler_demo: CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.o
 scheduler_demo: CMakeFiles/scheduler_demo.dir/src/main.cpp.o
+scheduler_demo: CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.o
+scheduler_demo: CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.o
 scheduler_demo: CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o
 scheduler_demo: CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o
 scheduler_demo: CMakeFiles/scheduler_demo.dir/build.make
 scheduler_demo: deps/tmxparser/libtmxparser.so.2.1.0
 scheduler_demo: CMakeFiles/scheduler_demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable scheduler_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/scott/projects/enttTest/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable scheduler_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/scheduler_demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

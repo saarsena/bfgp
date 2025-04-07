@@ -54,4 +54,24 @@ struct AddSpawnTrigger {
   bool ready = true;
 };
 
+struct PositionComponent {
+  int x;
+  int y;
+};
+
+struct CollisionComponent {
+  bool isBlocking; // true for walls, false for passable entities
+  CollisionComponent(bool blocking) : isBlocking(blocking) {}
+};
+
+// Marker component to identify our test entity
+struct TestComponent {
+  // Empty marker component
+};
+
+// Marker component to identify the player entity
+struct PlayerMarker {
+  // Empty marker component
+};
+
 } // namespace Components

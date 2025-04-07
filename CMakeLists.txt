@@ -40,6 +40,9 @@ add_executable(scheduler_demo
     ${EXAMPLE_SRC_FILES}
 )
 
+# Copy assets directory to build directory
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/assets DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+
 # Standalone example executables
 add_executable(scheduler_example 
     examples/SchedulerExample.cpp
@@ -48,6 +51,23 @@ add_executable(scheduler_example
 add_executable(entt_event_example 
     examples/EnttEventExample.cpp
     examples/mains/entt_event_example_main.cpp
+)
+
+# Add dungeon example
+add_executable(dungeon_example
+    examples/DungeonExample.hpp
+    examples/mains/dungeon_example_main.cpp
+    src/walkerdungeon.cpp
+)
+
+# Add collision test executable
+add_executable(collision_test
+    examples/CollisionTest.hpp
+    examples/CollisionTest.cpp
+    examples/mains/collision_test_main.cpp
+    src/Player.cpp
+    src/Mob.cpp
+    src/walkerdungeon.cpp
 )
 
 # Link all necessary libs
@@ -65,4 +85,19 @@ target_link_libraries(scheduler_example
 )
 target_link_libraries(entt_event_example
     tmxparser
+)
+target_link_libraries(dungeon_example
+    tmxparser
+    ${SDL2_LIBRARIES}
+    ${SDL2_IMAGE_LIBRARIES}
+    ${SDL2_TTF_LIBRARIES}
+    ${SDL2_MIXER_LIBRARIES}
+)
+
+target_link_libraries(collision_test
+    tmxparser
+    ${SDL2_LIBRARIES}
+    ${SDL2_IMAGE_LIBRARIES}
+    ${SDL2_TTF_LIBRARIES}
+    ${SDL2_MIXER_LIBRARIES}
 )

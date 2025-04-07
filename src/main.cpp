@@ -17,13 +17,13 @@ class SchedulerExample;
 class EnttEventExample;
 
 // Implementation of example runner functions
-#include "../examples/SchedulerExample.h"
+#include "../include/core/SchedulerExample.h"
 void runSchedulerExamples() {
   SchedulerExample example;
   example.run();
 }
 
-#include "../examples/EnttEventExample.h"
+#include "../include/core/EnttEventExample.h"
 void runEnttEventExamples() {
   EnttEventExample example;
   example.run();
@@ -39,6 +39,25 @@ void runGame() {
   }
 
   game.run();
+}
+
+// Add this before runGame() or main()
+void debugMapLoader() {
+  std::cout << "\n=== TMX Map Debug Info ===\n";
+
+  TmxMapLoader mapLoader;
+  if (!mapLoader.loadMap("assets/tg_tiled_example.tmx")) {
+    std::cerr << "Failed to load map for debugging!" << std::endl;
+    return;
+  }
+
+  // Print various map information
+  mapLoader.printMapInfo();
+  mapLoader.printLayerInfo();
+  mapLoader.printTilesetInfo();
+  mapLoader.printObjectGroups();
+
+  std::cout << "\nMap loaded successfully!\n";
 }
 
 int main(int argc, char *argv[]) {
@@ -60,6 +79,9 @@ int main(int argc, char *argv[]) {
       std::cout << "  --events       Run event system examples" << std::endl;
       std::cout << "  --help         Show this help message" << std::endl;
       std::cout << "  (no option)    Run the main game" << std::endl;
+      return 0;
+    } else if (arg == "--debug-map") {
+      debugMapLoader();
       return 0;
     }
   }

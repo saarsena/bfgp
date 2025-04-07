@@ -201,6 +201,32 @@ entt_event_example/fast:
 .PHONY : entt_event_example/fast
 
 #=============================================================================
+# Target rules for targets named dungeon_example
+
+# Build rule for target.
+dungeon_example: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dungeon_example
+.PHONY : dungeon_example
+
+# fast build rule for target.
+dungeon_example/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dungeon_example.dir/build.make CMakeFiles/dungeon_example.dir/build
+.PHONY : dungeon_example/fast
+
+#=============================================================================
+# Target rules for targets named collision_test
+
+# Build rule for target.
+collision_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 collision_test
+.PHONY : collision_test
+
+# fast build rule for target.
+collision_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/build
+.PHONY : collision_test/fast
+
+#=============================================================================
 # Target rules for targets named tmxparser
 
 # Build rule for target.
@@ -212,6 +238,33 @@ tmxparser: cmake_check_build_system
 tmxparser/fast:
 	$(MAKE) $(MAKESILENT) -f deps/tmxparser/CMakeFiles/tmxparser.dir/build.make deps/tmxparser/CMakeFiles/tmxparser.dir/build
 .PHONY : tmxparser/fast
+
+examples/CollisionTest.o: examples/CollisionTest.cpp.o
+.PHONY : examples/CollisionTest.o
+
+# target to build an object file
+examples/CollisionTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/examples/CollisionTest.cpp.o
+.PHONY : examples/CollisionTest.cpp.o
+
+examples/CollisionTest.i: examples/CollisionTest.cpp.i
+.PHONY : examples/CollisionTest.i
+
+# target to preprocess a source file
+examples/CollisionTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/examples/CollisionTest.cpp.i
+.PHONY : examples/CollisionTest.cpp.i
+
+examples/CollisionTest.s: examples/CollisionTest.cpp.s
+.PHONY : examples/CollisionTest.s
+
+# target to generate assembly for a file
+examples/CollisionTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/examples/CollisionTest.cpp.s
+.PHONY : examples/CollisionTest.cpp.s
 
 examples/EnttEventExample.o: examples/EnttEventExample.cpp.o
 .PHONY : examples/EnttEventExample.o
@@ -266,6 +319,54 @@ examples/SchedulerExample.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/examples/SchedulerExample.cpp.s
 .PHONY : examples/SchedulerExample.cpp.s
+
+examples/mains/collision_test_main.o: examples/mains/collision_test_main.cpp.o
+.PHONY : examples/mains/collision_test_main.o
+
+# target to build an object file
+examples/mains/collision_test_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/examples/mains/collision_test_main.cpp.o
+.PHONY : examples/mains/collision_test_main.cpp.o
+
+examples/mains/collision_test_main.i: examples/mains/collision_test_main.cpp.i
+.PHONY : examples/mains/collision_test_main.i
+
+# target to preprocess a source file
+examples/mains/collision_test_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/examples/mains/collision_test_main.cpp.i
+.PHONY : examples/mains/collision_test_main.cpp.i
+
+examples/mains/collision_test_main.s: examples/mains/collision_test_main.cpp.s
+.PHONY : examples/mains/collision_test_main.s
+
+# target to generate assembly for a file
+examples/mains/collision_test_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/examples/mains/collision_test_main.cpp.s
+.PHONY : examples/mains/collision_test_main.cpp.s
+
+examples/mains/dungeon_example_main.o: examples/mains/dungeon_example_main.cpp.o
+.PHONY : examples/mains/dungeon_example_main.o
+
+# target to build an object file
+examples/mains/dungeon_example_main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dungeon_example.dir/build.make CMakeFiles/dungeon_example.dir/examples/mains/dungeon_example_main.cpp.o
+.PHONY : examples/mains/dungeon_example_main.cpp.o
+
+examples/mains/dungeon_example_main.i: examples/mains/dungeon_example_main.cpp.i
+.PHONY : examples/mains/dungeon_example_main.i
+
+# target to preprocess a source file
+examples/mains/dungeon_example_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dungeon_example.dir/build.make CMakeFiles/dungeon_example.dir/examples/mains/dungeon_example_main.cpp.i
+.PHONY : examples/mains/dungeon_example_main.cpp.i
+
+examples/mains/dungeon_example_main.s: examples/mains/dungeon_example_main.cpp.s
+.PHONY : examples/mains/dungeon_example_main.s
+
+# target to generate assembly for a file
+examples/mains/dungeon_example_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dungeon_example.dir/build.make CMakeFiles/dungeon_example.dir/examples/mains/dungeon_example_main.cpp.s
+.PHONY : examples/mains/dungeon_example_main.cpp.s
 
 examples/mains/entt_event_example_main.o: examples/mains/entt_event_example_main.cpp.o
 .PHONY : examples/mains/entt_event_example_main.o
@@ -339,12 +440,40 @@ src/GameManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/GameManager.cpp.s
 .PHONY : src/GameManager.cpp.s
 
+src/Mob.o: src/Mob.cpp.o
+.PHONY : src/Mob.o
+
+# target to build an object file
+src/Mob.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Mob.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/Mob.cpp.o
+.PHONY : src/Mob.cpp.o
+
+src/Mob.i: src/Mob.cpp.i
+.PHONY : src/Mob.i
+
+# target to preprocess a source file
+src/Mob.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Mob.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/Mob.cpp.i
+.PHONY : src/Mob.cpp.i
+
+src/Mob.s: src/Mob.cpp.s
+.PHONY : src/Mob.s
+
+# target to generate assembly for a file
+src/Mob.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Mob.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/Mob.cpp.s
+.PHONY : src/Mob.cpp.s
+
 src/Player.o: src/Player.cpp.o
 .PHONY : src/Player.o
 
 # target to build an object file
 src/Player.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Player.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/Player.cpp.o
 .PHONY : src/Player.cpp.o
 
 src/Player.i: src/Player.cpp.i
@@ -353,6 +482,7 @@ src/Player.i: src/Player.cpp.i
 # target to preprocess a source file
 src/Player.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Player.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/Player.cpp.i
 .PHONY : src/Player.cpp.i
 
 src/Player.s: src/Player.cpp.s
@@ -361,6 +491,7 @@ src/Player.s: src/Player.cpp.s
 # target to generate assembly for a file
 src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Player.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
 
 src/Tile.o: src/Tile.cpp.o
@@ -435,6 +566,36 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/walkerdungeon.o: src/walkerdungeon.cpp.o
+.PHONY : src/walkerdungeon.o
+
+# target to build an object file
+src/walkerdungeon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dungeon_example.dir/build.make CMakeFiles/dungeon_example.dir/src/walkerdungeon.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/walkerdungeon.cpp.o
+.PHONY : src/walkerdungeon.cpp.o
+
+src/walkerdungeon.i: src/walkerdungeon.cpp.i
+.PHONY : src/walkerdungeon.i
+
+# target to preprocess a source file
+src/walkerdungeon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dungeon_example.dir/build.make CMakeFiles/dungeon_example.dir/src/walkerdungeon.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/walkerdungeon.cpp.i
+.PHONY : src/walkerdungeon.cpp.i
+
+src/walkerdungeon.s: src/walkerdungeon.cpp.s
+.PHONY : src/walkerdungeon.s
+
+# target to generate assembly for a file
+src/walkerdungeon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dungeon_example.dir/build.make CMakeFiles/dungeon_example.dir/src/walkerdungeon.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/walkerdungeon.cpp.s
+.PHONY : src/walkerdungeon.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -447,16 +608,27 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... collision_test"
+	@echo "... dungeon_example"
 	@echo "... entt_event_example"
 	@echo "... scheduler_demo"
 	@echo "... scheduler_example"
 	@echo "... tmxparser"
+	@echo "... examples/CollisionTest.o"
+	@echo "... examples/CollisionTest.i"
+	@echo "... examples/CollisionTest.s"
 	@echo "... examples/EnttEventExample.o"
 	@echo "... examples/EnttEventExample.i"
 	@echo "... examples/EnttEventExample.s"
 	@echo "... examples/SchedulerExample.o"
 	@echo "... examples/SchedulerExample.i"
 	@echo "... examples/SchedulerExample.s"
+	@echo "... examples/mains/collision_test_main.o"
+	@echo "... examples/mains/collision_test_main.i"
+	@echo "... examples/mains/collision_test_main.s"
+	@echo "... examples/mains/dungeon_example_main.o"
+	@echo "... examples/mains/dungeon_example_main.i"
+	@echo "... examples/mains/dungeon_example_main.s"
 	@echo "... examples/mains/entt_event_example_main.o"
 	@echo "... examples/mains/entt_event_example_main.i"
 	@echo "... examples/mains/entt_event_example_main.s"
@@ -466,6 +638,9 @@ help:
 	@echo "... src/GameManager.o"
 	@echo "... src/GameManager.i"
 	@echo "... src/GameManager.s"
+	@echo "... src/Mob.o"
+	@echo "... src/Mob.i"
+	@echo "... src/Mob.s"
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
@@ -478,6 +653,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/walkerdungeon.o"
+	@echo "... src/walkerdungeon.i"
+	@echo "... src/walkerdungeon.s"
 .PHONY : help
 
 

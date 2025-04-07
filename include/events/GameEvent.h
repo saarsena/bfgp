@@ -6,7 +6,8 @@ enum class GameEventType {
   PLAYER_COLLISION,
   ENTITY_SPAWN,
   ENTITY_DESTROY,
-  MAP_CHANGED
+  MAP_CHANGED,
+  MOB_MOVED
 };
 
 // Base event class
@@ -26,6 +27,16 @@ class PlayerMovedEvent : public GameEvent {
 public:
   PlayerMovedEvent(int newX, int newY)
       : GameEvent(GameEventType::PLAYER_MOVED), newX(newX), newY(newY) {}
+
+  int newX;
+  int newY;
+};
+
+// Mob movement event
+class MobMovedEvent : public GameEvent {
+public:
+  MobMovedEvent(int newX, int newY)
+      : GameEvent(GameEventType::MOB_MOVED), newX(newX), newY(newY) {}
 
   int newX;
   int newY;

@@ -1,4 +1,4 @@
-#include "../EnttEventExample.h"
+#include "../../include/core/EnttEventExample.h"
 
 int main() {
   EnttEventExample example;

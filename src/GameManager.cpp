@@ -136,7 +136,7 @@ bool GameManager::init() {
 
   // Position player at the spawn location
   player = new Player(static_cast<int>(spawnX), static_cast<int>(spawnY),
-                      playerTexture, mapLoader.getTileWidth());
+                      playerTexture, this->registry, mapLoader.getTileWidth());
 
   // Set up event handlers
   setupEventHandlers();
@@ -146,8 +146,6 @@ bool GameManager::init() {
 }
 
 bool GameManager::loadTilesets() {
-  const Tmx::Map &map = mapLoader.getMap();
-
   for (int i = 0; i < mapLoader.getNumTilesets(); ++i) {
     const Tmx::Tileset *tileset = mapLoader.getTileset(i);
     std::string imagePath = "assets/" + tileset->GetImage()->GetSource();

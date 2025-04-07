@@ -3,6 +3,9 @@
 #include <entt/entt.hpp>
 #include <string>
 
+// Use the same definition as in Scheduler.h
+using ActionID = uint32_t;
+
 // EnTT event types for game events
 namespace GameEvents {
 
@@ -67,6 +70,12 @@ struct CombatStartEvent {
 struct CombatEndEvent {
   entt::entity winner; // Optional winner
   bool fled;
+};
+
+// Action completed event
+struct ActionCompletedEvent {
+  ActionID actionId;
+  entt::entity entity;
 };
 
 } // namespace GameEvents

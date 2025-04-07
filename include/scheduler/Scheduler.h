@@ -1,5 +1,6 @@
 #pragma once
 
+#include "../events/GameEvents.h"
 #include <entt/entt.hpp>
 #include <functional>
 #include <queue>
@@ -12,6 +13,9 @@ struct ScheduledAction {
   int tick;
   entt::entity entity;
   std::function<void(entt::entity, entt::registry &)> action;
+  std::function<void(ActionID, entt::entity, entt::registry &,
+                     entt::dispatcher &)>
+      onComplete;
 
   bool operator<(const ScheduledAction &other) const {
     return tick > other.tick; // Min-heap behavior for priority queue
@@ -33,10 +37,13 @@ public:
   }
 
   // Convenience method to create and schedule an action
-  ActionID
-  schedule(int tick, entt::entity entity,
-           std::function<void(entt::entity, entt::registry &)> action) {
-    ScheduledAction scheduledAction{0, tick, entity, std::move(action)};
+  ActionID schedule(int tick, entt::entity entity,
+                    std::function<void(entt::entity, entt::registry &)> action,
+                    std::function<void(ActionID, entt::entity, entt::registry &,
+                                       entt::dispatcher &)>
+                        onComplete = nullptr) {
+    ScheduledAction scheduledAction{0, tick, entity, std::move(action),
+                                    std::move(onComplete)};
     return schedule(scheduledAction);
   }
 
@@ -52,7 +59,8 @@ public:
   }
 
   // Process actions that are due at the current tick
-  void update(int current_tick, entt::registry &registry) {
+  void update(int current_tick, entt::registry &registry,
+              entt::dispatcher &dispatcher) {
     while (!queue.empty() && queue.top().tick <= current_tick) {
       ScheduledAction action = queue.top();
       queue.pop();
@@ -64,7 +72,17 @@ public:
 
       // Execute the action if the entity is still valid
       if (registry.valid(action.entity)) {
+        // Execute main action
         action.action(action.entity, registry);
+
+        // Trigger standard completion event
+        dispatcher.enqueue<GameEvents::ActionCompletedEvent>(action.id,
+                                                             action.entity);
+
+        // Call custom onComplete if provided
+        if (action.onComplete) {
+          action.onComplete(action.id, action.entity, registry, dispatcher);
+        }
       }
 
       // Remove from active actions

@@ -7,6 +7,7 @@
 #include <SDL_image.h>
 #include <SDL_mixer.h>
 #include <SDL_ttf.h>
+#include <entt/entt.hpp>
 #include <map>
 #include <vector>
 
@@ -29,6 +30,7 @@ private:
 
   // Event system
   EventBus eventBus;
+  entt::registry registry;
 
   std::vector<Tile> tiles;
   Player *player;

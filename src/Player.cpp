@@ -2,8 +2,20 @@
 #include "../include/events/GameEvent.h"
 #include <SDL.h>
 
-Player::Player(int tileX, int tileY, SDL_Texture *texture, int tileSize)
-    : tileX(tileX), tileY(tileY), texture(texture), tileSize(tileSize) {}
+Player::Player(int tileX, int tileY, SDL_Texture *texture,
+               entt::registry &registry, int tileSize)
+    : registry(registry), tileSize(tileSize), texture(texture) {
+  // Create the player entity
+  entity = registry.create();
+
+  // Set up position component
+  position.x = tileX;
+  position.y = tileY;
+  registry.emplace<Components::PositionComponent>(entity, position);
+
+  // Set up collision component (player is not blocking)
+  registry.emplace<Components::CollisionComponent>(entity, true);
+}
 
 void Player::handleInput(const SDL_Event &e, EventBus &bus) {
   if (e.type == SDL_KEYDOWN) {
@@ -24,29 +36,36 @@ void Player::handleInput(const SDL_Event &e, EventBus &bus) {
   }
 }
 
-bool Player::move(int dx, int dy, EventBus &bus) {
-  tileX += dx;
-  tileY += dy;
-  bus.publish(PlayerMovedEvent(tileX, tileY));
-  return true;
-}
-
 void Player::update() {
-  // Add future logic here
+  // Update position from the registry
+  position = registry.get<Components::PositionComponent>(entity);
 }
 
 void Player::render(SDL_Renderer *renderer) {
-  // Calculate pixel coordinates based on tile position
-  int pixelX = tileX * tileSize;
-  int pixelY = tileY * tileSize;
+  SDL_Rect dstRect = {position.x * tileSize, position.y * tileSize, tileSize,
+                      tileSize};
+  SDL_RenderCopy(renderer, texture, nullptr, &dstRect);
+}
 
-  if (texture) {
-    SDL_Rect dest = {pixelX, pixelY, tileSize, tileSize};
-    SDL_RenderCopy(renderer, texture, nullptr, &dest);
-  } else {
-    // If no texture, draw a simple colored rectangle
-    SDL_Rect playerRect = {pixelX, pixelY, tileSize, tileSize};
-    SDL_SetRenderDrawColor(renderer, 255, 50, 50, 255); // Red
-    SDL_RenderFillRect(renderer, &playerRect);
+bool Player::move(int dx, int dy, EventBus &bus) {
+  // Calculate new position
+  Components::PositionComponent newPos = position;
+  newPos.x += dx;
+  newPos.y += dy;
+
+  // Check for collisions
+  if (!CollisionSystem::CheckCollision(registry, newPos, entity)) {
+    // Update position in registry
+    registry.patch<Components::PositionComponent>(
+        entity, [&](auto &pos) { pos = newPos; });
+
+    // Update local position
+    position = newPos;
+
+    // Publish movement event
+    bus.publish(PlayerMovedEvent(position.x, position.y));
+    return true;
   }
+
+  return false;
 }
