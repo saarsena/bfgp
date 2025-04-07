@@ -34,7 +34,7 @@ bool GameManager::init() {
     return false;
 
   // Load the map first to determine window size
-  if (!mapLoader.loadMap("assets/tg_tiled_example.tmx")) {
+  if (!mapLoader.loadMap("assets/tg_tiled_example.tmx", registry)) {
     std::cerr << "Failed to load map!" << std::endl;
     return false;
   }

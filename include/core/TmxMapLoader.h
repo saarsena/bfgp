@@ -1,6 +1,9 @@
 #pragma once
 
+#include "Tags.h"
 #include "TmxMap.h"
+#include "TmxTile.h"
+#include <entt/entt.hpp>
 #include <filesystem>
 #include <string>
 #include <vector>
@@ -12,6 +15,7 @@ class TileLayer;
 class Tileset;
 class ObjectGroup;
 class Object;
+class Tile;
 } // namespace Tmx
 
 class TmxMapLoader {
@@ -25,7 +29,7 @@ public:
   TmxMapLoader();
   ~TmxMapLoader();
 
-  bool loadMap(const std::string &filepath);
+  bool loadMap(const std::string &filepath, entt::registry &registry);
   bool isLoaded() const;
   std::string getCurrentMapPath() const;
   bool isMapModified() const;
@@ -56,4 +60,11 @@ public:
   const Tmx::ObjectGroup *getObjectGroup(int index) const;
   std::vector<const Tmx::Object *>
   getObjectsByType(const std::string &type) const;
+
+  // Collision checking
+  bool isTileCollidable(int gid) const;
+
+  // Create collider entities from a tile layer
+  void createColliderEntities(entt::registry &registry, int layerIndex,
+                              int tileWidth, int tileHeight) const;
 };

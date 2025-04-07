@@ -45,8 +45,10 @@ void runGame() {
 void debugMapLoader() {
   std::cout << "\n=== TMX Map Debug Info ===\n";
 
+  entt::registry registry;
   TmxMapLoader mapLoader;
-  if (!mapLoader.loadMap("assets/tg_tiled_example.tmx")) {
+
+  if (!mapLoader.loadMap("assets/tg_tiled_example.tmx", registry)) {
     std::cerr << "Failed to load map for debugging!" << std::endl;
     return;
   }

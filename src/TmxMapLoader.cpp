@@ -1,4 +1,5 @@
 #include "../include/core/TmxMapLoader.h"
+#include "../include/core/Components.h"
 
 #include <algorithm>
 #include <iostream>
@@ -15,7 +16,8 @@ TmxMapLoader::~TmxMapLoader() {
   // No need to delete map as it's not a pointer anymore
 }
 
-bool TmxMapLoader::loadMap(const std::string &filepath) {
+bool TmxMapLoader::loadMap(const std::string &filepath,
+                           entt::registry &registry) {
   if (!std::filesystem::exists(filepath)) {
     std::cerr << "File not found: " << filepath << std::endl;
     loaded = false;
@@ -36,6 +38,13 @@ bool TmxMapLoader::loadMap(const std::string &filepath) {
   currentMapPath = filepath;
   lastModifiedTime = std::filesystem::last_write_time(filepath);
   loaded = true;
+
+  // Create collider entities for each layer
+  for (int i = 0; i < map.GetNumLayers(); ++i) {
+    createColliderEntities(registry, i, map.GetTileWidth(),
+                           map.GetTileHeight());
+  }
+
   return true;
 }
 
@@ -201,4 +210,59 @@ TmxMapLoader::getObjectsByType(const std::string &type) const {
   }
 
   return results;
+}
+
+bool TmxMapLoader::isTileCollidable(int gid) const {
+  if (!loaded)
+    return false;
+
+  for (int i = 0; i < map.GetNumTilesets(); ++i) {
+    const Tmx::Tileset *tileset = map.GetTileset(i);
+    if (!tileset)
+      continue;
+
+    int firstGid = tileset->GetFirstGid();
+    int tileCount = tileset->GetTileCount();
+
+    if (gid >= firstGid && gid < firstGid + tileCount) {
+      const Tmx::Tile *tile = tileset->GetTile(gid - firstGid);
+      if (tile) {
+        return tile->GetProperties().HasProperty("Collider") &&
+               tile->GetProperties().GetBoolProperty("Collider");
+      }
+    }
+  }
+
+  return false;
+}
+
+void TmxMapLoader::createColliderEntities(entt::registry &registry,
+                                          int layerIndex, int tileWidth,
+                                          int tileHeight) const {
+  if (!loaded)
+    return;
+
+  const Tmx::Layer *layer = getLayer(layerIndex);
+  if (!layer)
+    return;
+
+  const Tmx::TileLayer *tileLayer = dynamic_cast<const Tmx::TileLayer *>(layer);
+  if (!tileLayer)
+    return;
+
+  for (int y = 0; y < tileLayer->GetHeight(); ++y) {
+    for (int x = 0; x < tileLayer->GetWidth(); ++x) {
+      int gid = tileLayer->GetTileGid(x, y);
+      if (gid == 0)
+        continue; // Skip empty tiles
+
+      if (isTileCollidable(gid)) {
+        entt::entity e = registry.create();
+        registry.emplace<Components::PositionComponent>(e, x * tileWidth,
+                                                        y * tileHeight);
+        registry.emplace<Components::CollisionComponent>(e, true);
+        registry.emplace<TileColliderTag>(e);
+      }
+    }
+  }
 }
