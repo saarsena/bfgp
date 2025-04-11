@@ -1,4 +1,4 @@
-# Tiny Galaxy Development Roadmap
+# Development Roadmap
 
 ## High Priority
 
