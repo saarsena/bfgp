@@ -3,60 +3,18 @@
 
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxColor.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxColor.cpp \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxColor.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -135,6 +93,60 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxColor.cpp.o: /home/scott/projects
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -151,17 +163,20 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxColor.cpp.o: /home/scott/projects
   /usr/include/sys/cdefs.h \
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
-  /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h
+  /usr/include/wchar.h
 
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxEllipse.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxEllipse.cpp \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxEllipse.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxPoint.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/wordsize.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/stddef.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -222,13 +237,15 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxEllipse.cpp.o: /home/scott/projec
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/wordsize.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
   /usr/include/stdc-predef.h \
-  /usr/include/sys/cdefs.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h
+  /usr/include/sys/cdefs.h
 
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxGroupLayer.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxGroupLayer.cpp \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxColor.h \
@@ -240,67 +257,19 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxGroupLayer.cpp.o: /home/scott/pro
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxProperty.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxPropertySet.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxTileLayer.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/assert.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -399,41 +368,11 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxGroupLayer.cpp.o: /home/scott/pro
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/limits.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/locale.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/types.h \
-  /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
-  /usr/local/include/tinyxml2.h
-
-deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxImage.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxImage.cpp \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxColor.h \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxImage.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \
+  /usr/include/assert.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
   /usr/include/bits/endian.h \
@@ -490,6 +429,45 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxImage.cpp.o: /home/scott/projects
   /usr/include/bits/wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/bits/xopen_lim.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/limits.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
+  /usr/include/locale.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/include/wchar.h \
+  /usr/local/include/tinyxml2.h
+
+deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxImage.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxImage.cpp \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxColor.h \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxImage.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -570,6 +548,66 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxImage.cpp.o: /home/scott/projects
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -591,11 +629,6 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxImage.cpp.o: /home/scott/projects
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
   /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
   /usr/local/include/tinyxml2.h
 
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxImageLayer.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxImageLayer.cpp \
@@ -606,67 +639,19 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxImageLayer.cpp.o: /home/scott/pro
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxMapTile.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxProperty.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxPropertySet.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/assert.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -765,6 +750,67 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxImageLayer.cpp.o: /home/scott/pro
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/assert.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -786,11 +832,6 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxImageLayer.cpp.o: /home/scott/pro
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
   /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
   /usr/local/include/tinyxml2.h
 
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxLayer.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxLayer.cpp \
@@ -802,72 +843,24 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxLayer.cpp.o: /home/scott/projects
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxPropertySet.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxTileset.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxUtil.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/confname.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/environments.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/getopt_core.h \
-  /usr/include/bits/getopt_posix.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/posix_opt.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/unistd_ext.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stdarg___va_copy.h \
+  /usr/lib/clang/19/include/__stdarg_header_macro.h \
+  /usr/lib/clang/19/include/__stdarg_va_arg.h \
+  /usr/lib/clang/19/include/__stdarg_va_copy.h \
+  /usr/lib/clang/19/include/__stdarg_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/algorithm \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
@@ -976,6 +969,72 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxLayer.cpp.o: /home/scott/projects
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/confname.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/environments.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/getopt_core.h \
+  /usr/include/bits/getopt_posix.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/posix_opt.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/unistd_ext.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -1002,11 +1061,6 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxLayer.cpp.o: /home/scott/projects
   /usr/include/zconf.h \
   /usr/include/zlib.h \
   /usr/include/zlib_name_mangling.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
   /usr/local/include/tinyxml2.h
 
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxMap.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxMap.cpp \
@@ -1021,66 +1075,19 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxMap.cpp.o: /home/scott/projects/e
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxPropertySet.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxTileLayer.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxTileset.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -1178,6 +1185,66 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxMap.cpp.o: /home/scott/projects/e
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -1199,11 +1266,6 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxMap.cpp.o: /home/scott/projects/e
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
   /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
   /usr/local/include/tinyxml2.h
 
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxObject.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxObject.cpp \
@@ -1216,66 +1278,19 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxObject.cpp.o: /home/scott/project
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxProperty.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxPropertySet.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxText.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -1373,6 +1388,66 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxObject.cpp.o: /home/scott/project
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -1394,11 +1469,6 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxObject.cpp.o: /home/scott/project
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
   /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
   /usr/local/include/tinyxml2.h
 
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxObjectGroup.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxObjectGroup.cpp \
@@ -1409,66 +1479,19 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxObjectGroup.cpp.o: /home/scott/pr
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxObjectGroup.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxProperty.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxPropertySet.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -1566,327 +1589,6 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxObjectGroup.cpp.o: /home/scott/pr
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/limits.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/locale.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/types.h \
-  /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
-  /usr/local/include/tinyxml2.h
-
-deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxPolygon.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxPolygon.cpp \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxPoint.h \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxPolygon.h \
-  /usr/include/alloca.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
-  /usr/include/c++/14/backward/binders.h \
-  /usr/include/c++/14/bit \
-  /usr/include/c++/14/bits/alloc_traits.h \
-  /usr/include/c++/14/bits/allocator.h \
-  /usr/include/c++/14/bits/concept_check.h \
-  /usr/include/c++/14/bits/cpp_type_traits.h \
-  /usr/include/c++/14/bits/exception.h \
-  /usr/include/c++/14/bits/exception_defines.h \
-  /usr/include/c++/14/bits/functexcept.h \
-  /usr/include/c++/14/bits/functional_hash.h \
-  /usr/include/c++/14/bits/hash_bytes.h \
-  /usr/include/c++/14/bits/invoke.h \
-  /usr/include/c++/14/bits/iterator_concepts.h \
-  /usr/include/c++/14/bits/max_size_type.h \
-  /usr/include/c++/14/bits/memory_resource.h \
-  /usr/include/c++/14/bits/memoryfwd.h \
-  /usr/include/c++/14/bits/move.h \
-  /usr/include/c++/14/bits/new_allocator.h \
-  /usr/include/c++/14/bits/predefined_ops.h \
-  /usr/include/c++/14/bits/ptr_traits.h \
-  /usr/include/c++/14/bits/range_access.h \
-  /usr/include/c++/14/bits/ranges_base.h \
-  /usr/include/c++/14/bits/ranges_cmp.h \
-  /usr/include/c++/14/bits/ranges_util.h \
-  /usr/include/c++/14/bits/refwrap.h \
-  /usr/include/c++/14/bits/requires_hosted.h \
-  /usr/include/c++/14/bits/std_abs.h \
-  /usr/include/c++/14/bits/stl_algobase.h \
-  /usr/include/c++/14/bits/stl_bvector.h \
-  /usr/include/c++/14/bits/stl_construct.h \
-  /usr/include/c++/14/bits/stl_function.h \
-  /usr/include/c++/14/bits/stl_iterator.h \
-  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/14/bits/stl_iterator_base_types.h \
-  /usr/include/c++/14/bits/stl_pair.h \
-  /usr/include/c++/14/bits/stl_uninitialized.h \
-  /usr/include/c++/14/bits/stl_vector.h \
-  /usr/include/c++/14/bits/uses_allocator.h \
-  /usr/include/c++/14/bits/uses_allocator_args.h \
-  /usr/include/c++/14/bits/utility.h \
-  /usr/include/c++/14/bits/vector.tcc \
-  /usr/include/c++/14/bits/version.h \
-  /usr/include/c++/14/cctype \
-  /usr/include/c++/14/climits \
-  /usr/include/c++/14/compare \
-  /usr/include/c++/14/concepts \
-  /usr/include/c++/14/cstddef \
-  /usr/include/c++/14/cstdio \
-  /usr/include/c++/14/cstdlib \
-  /usr/include/c++/14/cstring \
-  /usr/include/c++/14/debug/assertions.h \
-  /usr/include/c++/14/debug/debug.h \
-  /usr/include/c++/14/ext/alloc_traits.h \
-  /usr/include/c++/14/ext/numeric_traits.h \
-  /usr/include/c++/14/ext/type_traits.h \
-  /usr/include/c++/14/initializer_list \
-  /usr/include/c++/14/new \
-  /usr/include/c++/14/numbers \
-  /usr/include/c++/14/pstl/pstl_config.h \
-  /usr/include/c++/14/tuple \
-  /usr/include/c++/14/type_traits \
-  /usr/include/c++/14/vector \
-  /usr/include/c++/14/x86_64-redhat-linux/bits/c++allocator.h \
-  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
-  /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
-  /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/limits.h \
-  /usr/include/linux/limits.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/types.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
-  /usr/local/include/tinyxml2.h
-
-deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxPolyline.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxPolyline.cpp \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxPoint.h \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxPolyline.h \
-  /usr/include/alloca.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
-  /usr/include/c++/14/backward/binders.h \
-  /usr/include/c++/14/bit \
-  /usr/include/c++/14/bits/alloc_traits.h \
-  /usr/include/c++/14/bits/allocator.h \
-  /usr/include/c++/14/bits/concept_check.h \
-  /usr/include/c++/14/bits/cpp_type_traits.h \
-  /usr/include/c++/14/bits/exception.h \
-  /usr/include/c++/14/bits/exception_defines.h \
-  /usr/include/c++/14/bits/functexcept.h \
-  /usr/include/c++/14/bits/functional_hash.h \
-  /usr/include/c++/14/bits/hash_bytes.h \
-  /usr/include/c++/14/bits/invoke.h \
-  /usr/include/c++/14/bits/iterator_concepts.h \
-  /usr/include/c++/14/bits/max_size_type.h \
-  /usr/include/c++/14/bits/memory_resource.h \
-  /usr/include/c++/14/bits/memoryfwd.h \
-  /usr/include/c++/14/bits/move.h \
-  /usr/include/c++/14/bits/new_allocator.h \
-  /usr/include/c++/14/bits/predefined_ops.h \
-  /usr/include/c++/14/bits/ptr_traits.h \
-  /usr/include/c++/14/bits/range_access.h \
-  /usr/include/c++/14/bits/ranges_base.h \
-  /usr/include/c++/14/bits/ranges_cmp.h \
-  /usr/include/c++/14/bits/ranges_util.h \
-  /usr/include/c++/14/bits/refwrap.h \
-  /usr/include/c++/14/bits/requires_hosted.h \
-  /usr/include/c++/14/bits/std_abs.h \
-  /usr/include/c++/14/bits/stl_algobase.h \
-  /usr/include/c++/14/bits/stl_bvector.h \
-  /usr/include/c++/14/bits/stl_construct.h \
-  /usr/include/c++/14/bits/stl_function.h \
-  /usr/include/c++/14/bits/stl_iterator.h \
-  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/14/bits/stl_iterator_base_types.h \
-  /usr/include/c++/14/bits/stl_pair.h \
-  /usr/include/c++/14/bits/stl_uninitialized.h \
-  /usr/include/c++/14/bits/stl_vector.h \
-  /usr/include/c++/14/bits/uses_allocator.h \
-  /usr/include/c++/14/bits/uses_allocator_args.h \
-  /usr/include/c++/14/bits/utility.h \
-  /usr/include/c++/14/bits/vector.tcc \
-  /usr/include/c++/14/bits/version.h \
-  /usr/include/c++/14/cctype \
-  /usr/include/c++/14/climits \
-  /usr/include/c++/14/compare \
-  /usr/include/c++/14/concepts \
-  /usr/include/c++/14/cstddef \
-  /usr/include/c++/14/cstdio \
-  /usr/include/c++/14/cstdlib \
-  /usr/include/c++/14/cstring \
-  /usr/include/c++/14/debug/assertions.h \
-  /usr/include/c++/14/debug/debug.h \
-  /usr/include/c++/14/ext/alloc_traits.h \
-  /usr/include/c++/14/ext/numeric_traits.h \
-  /usr/include/c++/14/ext/type_traits.h \
-  /usr/include/c++/14/initializer_list \
-  /usr/include/c++/14/new \
-  /usr/include/c++/14/numbers \
-  /usr/include/c++/14/pstl/pstl_config.h \
-  /usr/include/c++/14/tuple \
-  /usr/include/c++/14/type_traits \
-  /usr/include/c++/14/vector \
-  /usr/include/c++/14/x86_64-redhat-linux/bits/c++allocator.h \
-  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
-  /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
-  /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/limits.h \
-  /usr/include/linux/limits.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/types.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
-  /usr/local/include/tinyxml2.h
-
-deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxProperty.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxProperty.cpp \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxColor.h \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxProperty.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -1947,6 +1649,351 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxProperty.cpp.o: /home/scott/proje
   /usr/include/bits/wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/bits/xopen_lim.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/limits.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
+  /usr/include/locale.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/include/wchar.h \
+  /usr/local/include/tinyxml2.h
+
+deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxPolygon.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxPolygon.cpp \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxPoint.h \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxPolygon.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
+  /usr/include/c++/14/backward/binders.h \
+  /usr/include/c++/14/bit \
+  /usr/include/c++/14/bits/alloc_traits.h \
+  /usr/include/c++/14/bits/allocator.h \
+  /usr/include/c++/14/bits/concept_check.h \
+  /usr/include/c++/14/bits/cpp_type_traits.h \
+  /usr/include/c++/14/bits/exception.h \
+  /usr/include/c++/14/bits/exception_defines.h \
+  /usr/include/c++/14/bits/functexcept.h \
+  /usr/include/c++/14/bits/functional_hash.h \
+  /usr/include/c++/14/bits/hash_bytes.h \
+  /usr/include/c++/14/bits/invoke.h \
+  /usr/include/c++/14/bits/iterator_concepts.h \
+  /usr/include/c++/14/bits/max_size_type.h \
+  /usr/include/c++/14/bits/memory_resource.h \
+  /usr/include/c++/14/bits/memoryfwd.h \
+  /usr/include/c++/14/bits/move.h \
+  /usr/include/c++/14/bits/new_allocator.h \
+  /usr/include/c++/14/bits/predefined_ops.h \
+  /usr/include/c++/14/bits/ptr_traits.h \
+  /usr/include/c++/14/bits/range_access.h \
+  /usr/include/c++/14/bits/ranges_base.h \
+  /usr/include/c++/14/bits/ranges_cmp.h \
+  /usr/include/c++/14/bits/ranges_util.h \
+  /usr/include/c++/14/bits/refwrap.h \
+  /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/std_abs.h \
+  /usr/include/c++/14/bits/stl_algobase.h \
+  /usr/include/c++/14/bits/stl_bvector.h \
+  /usr/include/c++/14/bits/stl_construct.h \
+  /usr/include/c++/14/bits/stl_function.h \
+  /usr/include/c++/14/bits/stl_iterator.h \
+  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/14/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14/bits/stl_pair.h \
+  /usr/include/c++/14/bits/stl_uninitialized.h \
+  /usr/include/c++/14/bits/stl_vector.h \
+  /usr/include/c++/14/bits/uses_allocator.h \
+  /usr/include/c++/14/bits/uses_allocator_args.h \
+  /usr/include/c++/14/bits/utility.h \
+  /usr/include/c++/14/bits/vector.tcc \
+  /usr/include/c++/14/bits/version.h \
+  /usr/include/c++/14/cctype \
+  /usr/include/c++/14/climits \
+  /usr/include/c++/14/compare \
+  /usr/include/c++/14/concepts \
+  /usr/include/c++/14/cstddef \
+  /usr/include/c++/14/cstdio \
+  /usr/include/c++/14/cstdlib \
+  /usr/include/c++/14/cstring \
+  /usr/include/c++/14/debug/assertions.h \
+  /usr/include/c++/14/debug/debug.h \
+  /usr/include/c++/14/ext/alloc_traits.h \
+  /usr/include/c++/14/ext/numeric_traits.h \
+  /usr/include/c++/14/ext/type_traits.h \
+  /usr/include/c++/14/initializer_list \
+  /usr/include/c++/14/new \
+  /usr/include/c++/14/numbers \
+  /usr/include/c++/14/pstl/pstl_config.h \
+  /usr/include/c++/14/tuple \
+  /usr/include/c++/14/type_traits \
+  /usr/include/c++/14/vector \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/c++allocator.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/limits.h \
+  /usr/include/linux/limits.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/local/include/tinyxml2.h
+
+deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxPolyline.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxPolyline.cpp \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxPoint.h \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxPolyline.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
+  /usr/include/c++/14/backward/binders.h \
+  /usr/include/c++/14/bit \
+  /usr/include/c++/14/bits/alloc_traits.h \
+  /usr/include/c++/14/bits/allocator.h \
+  /usr/include/c++/14/bits/concept_check.h \
+  /usr/include/c++/14/bits/cpp_type_traits.h \
+  /usr/include/c++/14/bits/exception.h \
+  /usr/include/c++/14/bits/exception_defines.h \
+  /usr/include/c++/14/bits/functexcept.h \
+  /usr/include/c++/14/bits/functional_hash.h \
+  /usr/include/c++/14/bits/hash_bytes.h \
+  /usr/include/c++/14/bits/invoke.h \
+  /usr/include/c++/14/bits/iterator_concepts.h \
+  /usr/include/c++/14/bits/max_size_type.h \
+  /usr/include/c++/14/bits/memory_resource.h \
+  /usr/include/c++/14/bits/memoryfwd.h \
+  /usr/include/c++/14/bits/move.h \
+  /usr/include/c++/14/bits/new_allocator.h \
+  /usr/include/c++/14/bits/predefined_ops.h \
+  /usr/include/c++/14/bits/ptr_traits.h \
+  /usr/include/c++/14/bits/range_access.h \
+  /usr/include/c++/14/bits/ranges_base.h \
+  /usr/include/c++/14/bits/ranges_cmp.h \
+  /usr/include/c++/14/bits/ranges_util.h \
+  /usr/include/c++/14/bits/refwrap.h \
+  /usr/include/c++/14/bits/requires_hosted.h \
+  /usr/include/c++/14/bits/std_abs.h \
+  /usr/include/c++/14/bits/stl_algobase.h \
+  /usr/include/c++/14/bits/stl_bvector.h \
+  /usr/include/c++/14/bits/stl_construct.h \
+  /usr/include/c++/14/bits/stl_function.h \
+  /usr/include/c++/14/bits/stl_iterator.h \
+  /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/14/bits/stl_iterator_base_types.h \
+  /usr/include/c++/14/bits/stl_pair.h \
+  /usr/include/c++/14/bits/stl_uninitialized.h \
+  /usr/include/c++/14/bits/stl_vector.h \
+  /usr/include/c++/14/bits/uses_allocator.h \
+  /usr/include/c++/14/bits/uses_allocator_args.h \
+  /usr/include/c++/14/bits/utility.h \
+  /usr/include/c++/14/bits/vector.tcc \
+  /usr/include/c++/14/bits/version.h \
+  /usr/include/c++/14/cctype \
+  /usr/include/c++/14/climits \
+  /usr/include/c++/14/compare \
+  /usr/include/c++/14/concepts \
+  /usr/include/c++/14/cstddef \
+  /usr/include/c++/14/cstdio \
+  /usr/include/c++/14/cstdlib \
+  /usr/include/c++/14/cstring \
+  /usr/include/c++/14/debug/assertions.h \
+  /usr/include/c++/14/debug/debug.h \
+  /usr/include/c++/14/ext/alloc_traits.h \
+  /usr/include/c++/14/ext/numeric_traits.h \
+  /usr/include/c++/14/ext/type_traits.h \
+  /usr/include/c++/14/initializer_list \
+  /usr/include/c++/14/new \
+  /usr/include/c++/14/numbers \
+  /usr/include/c++/14/pstl/pstl_config.h \
+  /usr/include/c++/14/tuple \
+  /usr/include/c++/14/type_traits \
+  /usr/include/c++/14/vector \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/c++allocator.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/limits.h \
+  /usr/include/linux/limits.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/local/include/tinyxml2.h
+
+deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxProperty.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxProperty.cpp \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxColor.h \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxProperty.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -2027,6 +2074,66 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxProperty.cpp.o: /home/scott/proje
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -2048,77 +2155,25 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxProperty.cpp.o: /home/scott/proje
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
   /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
   /usr/local/include/tinyxml2.h
 
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxPropertySet.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxPropertySet.cpp \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxColor.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxProperty.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxPropertySet.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -2211,6 +2266,66 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxPropertySet.cpp.o: /home/scott/pr
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -2232,11 +2347,6 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxPropertySet.cpp.o: /home/scott/pr
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
   /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
   /usr/local/include/tinyxml2.h
 
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTerrain.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxTerrain.cpp \
@@ -2244,66 +2354,19 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTerrain.cpp.o: /home/scott/projec
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxProperty.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxPropertySet.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxTerrain.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -2401,6 +2464,66 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTerrain.cpp.o: /home/scott/projec
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -2422,11 +2545,6 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTerrain.cpp.o: /home/scott/projec
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
   /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
   /usr/local/include/tinyxml2.h
 
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTerrainArray.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxTerrainArray.cpp \
@@ -2435,66 +2553,19 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTerrainArray.cpp.o: /home/scott/p
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxPropertySet.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxTerrain.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxTerrainArray.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -2592,37 +2663,6 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTerrainArray.cpp.o: /home/scott/p
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/limits.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/locale.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/types.h \
-  /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
-  /usr/local/include/tinyxml2.h
-
-deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxText.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxText.cpp \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxColor.h \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxText.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -2683,6 +2723,45 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxText.cpp.o: /home/scott/projects/
   /usr/include/bits/wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/bits/xopen_lim.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/limits.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
+  /usr/include/locale.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/include/wchar.h \
+  /usr/local/include/tinyxml2.h
+
+deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxText.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxText.cpp \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxColor.h \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxText.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -2768,6 +2847,66 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxText.cpp.o: /home/scott/projects/
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -2789,11 +2928,6 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxText.cpp.o: /home/scott/projects/
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
   /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
   /usr/local/include/tinyxml2.h
 
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTile.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxTile.cpp \
@@ -2806,66 +2940,19 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTile.cpp.o: /home/scott/projects/
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxProperty.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxPropertySet.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxTile.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -2969,66 +3056,23 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTile.cpp.o: /home/scott/projects/
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/limits.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/locale.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/types.h \
-  /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
-  /usr/local/include/tinyxml2.h
-
-deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTileLayer.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxTileLayer.cpp \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxColor.h \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxLayer.h \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxMap.h \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxMapTile.h \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxProperty.h \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxPropertySet.h \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxTileLayer.h \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxTileset.h \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxUtil.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
-  /usr/include/bits/confname.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
-  /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
-  /usr/include/bits/getopt_core.h \
-  /usr/include/bits/getopt_posix.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/bits/local_lim.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/posix_opt.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -3067,12 +3111,62 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTileLayer.cpp.o: /home/scott/proj
   /usr/include/bits/typesizes.h \
   /usr/include/bits/uintn-identity.h \
   /usr/include/bits/uio_lim.h \
-  /usr/include/bits/unistd_ext.h \
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/bits/xopen_lim.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/limits.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
+  /usr/include/locale.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/include/wchar.h \
+  /usr/local/include/tinyxml2.h
+
+deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTileLayer.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxTileLayer.cpp \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxColor.h \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxLayer.h \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxMap.h \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxMapTile.h \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxProperty.h \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxPropertySet.h \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxTileLayer.h \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxTileset.h \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxUtil.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stdarg___va_copy.h \
+  /usr/lib/clang/19/include/__stdarg_header_macro.h \
+  /usr/lib/clang/19/include/__stdarg_va_arg.h \
+  /usr/lib/clang/19/include/__stdarg_va_copy.h \
+  /usr/lib/clang/19/include/__stdarg_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/algorithm \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
@@ -3181,58 +3275,28 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTileLayer.cpp.o: /home/scott/proj
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/limits.h \
-  /usr/include/linux/close_range.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/locale.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/types.h \
-  /usr/include/unistd.h \
-  /usr/include/wchar.h \
-  /usr/include/zconf.h \
-  /usr/include/zlib.h \
-  /usr/include/zlib_name_mangling.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
-  /usr/local/include/tinyxml2.h
-
-deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTileOffset.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxTileOffset.cpp \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxTileOffset.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
+  /usr/include/bits/confname.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
+  /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/getopt_core.h \
+  /usr/include/bits/getopt_posix.h \
   /usr/include/bits/libc-header-start.h \
   /usr/include/bits/local_lim.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
   /usr/include/bits/posix1_lim.h \
   /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/posix_opt.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -3271,11 +3335,55 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTileOffset.cpp.o: /home/scott/pro
   /usr/include/bits/typesizes.h \
   /usr/include/bits/uintn-identity.h \
   /usr/include/bits/uio_lim.h \
+  /usr/include/bits/unistd_ext.h \
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
   /usr/include/bits/wordsize.h \
   /usr/include/bits/xopen_lim.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/limits.h \
+  /usr/include/linux/close_range.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
+  /usr/include/locale.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/include/unistd.h \
+  /usr/include/wchar.h \
+  /usr/include/zconf.h \
+  /usr/include/zlib.h \
+  /usr/include/zlib_name_mangling.h \
+  /usr/local/include/tinyxml2.h
+
+deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTileOffset.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxTileOffset.cpp \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxTileOffset.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -3355,6 +3463,66 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTileOffset.cpp.o: /home/scott/pro
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/local_lim.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/uio_lim.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -3376,11 +3544,6 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTileOffset.cpp.o: /home/scott/pro
   /usr/include/sys/select.h \
   /usr/include/sys/types.h \
   /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
   /usr/local/include/tinyxml2.h
 
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTileset.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxTileset.cpp \
@@ -3397,67 +3560,19 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTileset.cpp.o: /home/scott/projec
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxTile.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxTileOffset.h \
   /home/scott/projects/enttTest/deps/tmxparser/include/TmxTileset.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/assert.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/local_lim.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/posix1_lim.h \
-  /usr/include/bits/posix2_lim.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdint-least.h \
-  /usr/include/bits/stdint-uintn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/uio_lim.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wordsize.h \
-  /usr/include/bits/xopen_lim.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/limits.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -3562,56 +3677,25 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxTileset.cpp.o: /home/scott/projec
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/gnu/stubs-64.h \
-  /usr/include/gnu/stubs.h \
-  /usr/include/limits.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/locale.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/sys/cdefs.h \
-  /usr/include/sys/select.h \
-  /usr/include/sys/types.h \
-  /usr/include/wchar.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h \
-  /usr/local/include/tinyxml2.h
-
-deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxUtil.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxUtil.cpp \
-  /home/scott/projects/enttTest/deps/tmxparser/include/TmxUtil.h \
-  /home/scott/projects/enttTest/deps/tmxparser/include/base64/base64.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm/errno.h \
+  /usr/include/assert.h \
   /usr/include/bits/atomic_wide_counter.h \
   /usr/include/bits/byteswap.h \
-  /usr/include/bits/confname.h \
   /usr/include/bits/endian.h \
   /usr/include/bits/endianness.h \
-  /usr/include/bits/environments.h \
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
-  /usr/include/bits/getopt_core.h \
-  /usr/include/bits/getopt_posix.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/local_lim.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
-  /usr/include/bits/posix_opt.h \
+  /usr/include/bits/posix1_lim.h \
+  /usr/include/bits/posix2_lim.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
   /usr/include/bits/select.h \
@@ -3648,11 +3732,55 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxUtil.cpp.o: /home/scott/projects/
   /usr/include/bits/types/wint_t.h \
   /usr/include/bits/typesizes.h \
   /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/unistd_ext.h \
+  /usr/include/bits/uio_lim.h \
   /usr/include/bits/waitflags.h \
   /usr/include/bits/waitstatus.h \
   /usr/include/bits/wchar.h \
   /usr/include/bits/wordsize.h \
+  /usr/include/bits/xopen_lim.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/limits.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
+  /usr/include/locale.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/types.h \
+  /usr/include/wchar.h \
+  /usr/local/include/tinyxml2.h
+
+deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxUtil.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/TmxUtil.cpp \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxUtil.h \
+  /home/scott/projects/enttTest/deps/tmxparser/include/base64/base64.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stdarg___va_copy.h \
+  /usr/lib/clang/19/include/__stdarg_header_macro.h \
+  /usr/lib/clang/19/include/__stdarg_va_arg.h \
+  /usr/lib/clang/19/include/__stdarg_va_copy.h \
+  /usr/lib/clang/19/include/__stdarg_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
+  /usr/lib/clang/19/include/stdint.h \
   /usr/include/c++/14/algorithm \
   /usr/include/c++/14/array \
   /usr/include/c++/14/backward/binders.h \
@@ -3758,6 +3886,66 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxUtil.cpp.o: /home/scott/projects/
   /usr/include/c++/14/x86_64-redhat-linux/bits/c++locale.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/confname.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/environments.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/getopt_core.h \
+  /usr/include/bits/getopt_posix.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/posix_opt.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-least.h \
+  /usr/include/bits/stdint-uintn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/unistd_ext.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wordsize.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -3779,76 +3967,21 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxUtil.cpp.o: /home/scott/projects/
   /usr/include/wchar.h \
   /usr/include/zconf.h \
   /usr/include/zlib.h \
-  /usr/include/zlib_name_mangling.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h
+  /usr/include/zlib_name_mangling.h
 
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/projects/enttTest/deps/tmxparser/src/base64/base64.cpp \
   /home/scott/projects/enttTest/deps/tmxparser/include/base64/base64.h \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/asm/errno.h \
-  /usr/include/bits/atomic_wide_counter.h \
-  /usr/include/bits/byteswap.h \
-  /usr/include/bits/cpu-set.h \
-  /usr/include/bits/endian.h \
-  /usr/include/bits/endianness.h \
-  /usr/include/bits/errno.h \
-  /usr/include/bits/floatn-common.h \
-  /usr/include/bits/floatn.h \
-  /usr/include/bits/libc-header-start.h \
-  /usr/include/bits/locale.h \
-  /usr/include/bits/long-double.h \
-  /usr/include/bits/pthread_stack_min-dynamic.h \
-  /usr/include/bits/pthreadtypes-arch.h \
-  /usr/include/bits/pthreadtypes.h \
-  /usr/include/bits/sched.h \
-  /usr/include/bits/select.h \
-  /usr/include/bits/setjmp.h \
-  /usr/include/bits/stdint-intn.h \
-  /usr/include/bits/stdio_lim.h \
-  /usr/include/bits/stdlib-float.h \
-  /usr/include/bits/struct_mutex.h \
-  /usr/include/bits/struct_rwlock.h \
-  /usr/include/bits/thread-shared-types.h \
-  /usr/include/bits/time.h \
-  /usr/include/bits/time64.h \
-  /usr/include/bits/timesize.h \
-  /usr/include/bits/timex.h \
-  /usr/include/bits/types.h \
-  /usr/include/bits/types/FILE.h \
-  /usr/include/bits/types/__FILE.h \
-  /usr/include/bits/types/__fpos64_t.h \
-  /usr/include/bits/types/__fpos_t.h \
-  /usr/include/bits/types/__locale_t.h \
-  /usr/include/bits/types/__mbstate_t.h \
-  /usr/include/bits/types/__sigset_t.h \
-  /usr/include/bits/types/clock_t.h \
-  /usr/include/bits/types/clockid_t.h \
-  /usr/include/bits/types/cookie_io_functions_t.h \
-  /usr/include/bits/types/error_t.h \
-  /usr/include/bits/types/locale_t.h \
-  /usr/include/bits/types/mbstate_t.h \
-  /usr/include/bits/types/sigset_t.h \
-  /usr/include/bits/types/struct_FILE.h \
-  /usr/include/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/bits/types/struct_itimerspec.h \
-  /usr/include/bits/types/struct_sched_param.h \
-  /usr/include/bits/types/struct_timespec.h \
-  /usr/include/bits/types/struct_timeval.h \
-  /usr/include/bits/types/struct_tm.h \
-  /usr/include/bits/types/time_t.h \
-  /usr/include/bits/types/timer_t.h \
-  /usr/include/bits/types/wint_t.h \
-  /usr/include/bits/typesizes.h \
-  /usr/include/bits/uintn-identity.h \
-  /usr/include/bits/waitflags.h \
-  /usr/include/bits/waitstatus.h \
-  /usr/include/bits/wchar.h \
-  /usr/include/bits/wctype-wchar.h \
-  /usr/include/bits/wordsize.h \
+  /usr/lib/clang/19/include/__stdarg___gnuc_va_list.h \
+  /usr/lib/clang/19/include/__stddef_header_macro.h \
+  /usr/lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/lib/clang/19/include/__stddef_null.h \
+  /usr/lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/lib/clang/19/include/__stddef_offsetof.h \
+  /usr/lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/lib/clang/19/include/__stddef_size_t.h \
+  /usr/lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/lib/clang/19/include/stdarg.h \
+  /usr/lib/clang/19/include/stddef.h \
   /usr/include/c++/14/backward/binders.h \
   /usr/include/c++/14/bit \
   /usr/include/c++/14/bits/alloc_traits.h \
@@ -3958,6 +4091,69 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
   /usr/include/c++/14/x86_64-redhat-linux/bits/gthr-default.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/gthr.h \
   /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm/errno.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/cpu-set.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/sched.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/setjmp.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/timex.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_itimerspec.h \
+  /usr/include/bits/types/struct_sched_param.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_tm.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
+  /usr/include/bits/wordsize.h \
   /usr/include/ctype.h \
   /usr/include/endian.h \
   /usr/include/errno.h \
@@ -3978,9 +4174,7 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
   /usr/include/sys/types.h \
   /usr/include/time.h \
   /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h \
-  /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h
+  /usr/include/wctype.h
 
 
 /usr/include/sys/single_threaded.h:
@@ -3990,6 +4184,18 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 /usr/include/sched.h:
 
 /usr/include/pthread.h:
+
+/usr/include/bits/types/struct_tm.h:
+
+/usr/include/bits/types/struct_sched_param.h:
+
+/usr/include/bits/timex.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/bits/cpu-set.h:
 
 /usr/include/c++/14/x86_64-redhat-linux/bits/gthr.h:
 
@@ -4019,18 +4225,6 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 
 /usr/include/c++/14/bits/ios_base.h:
 
-/usr/include/bits/types/struct_tm.h:
-
-/usr/include/bits/types/struct_sched_param.h:
-
-/usr/include/bits/timex.h:
-
-/usr/include/bits/time.h:
-
-/usr/include/bits/setjmp.h:
-
-/usr/include/bits/cpu-set.h:
-
 /home/scott/projects/enttTest/deps/tmxparser/src/base64/base64.cpp:
 
 /usr/include/c++/14/functional:
@@ -4039,23 +4233,107 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 
 /home/scott/projects/enttTest/deps/tmxparser/include/base64/base64.h:
 
-/usr/include/c++/14/string_view:
+/home/scott/projects/enttTest/deps/tmxparser/src/TmxTileOffset.cpp:
+
+/home/scott/projects/enttTest/deps/tmxparser/src/TmxTileLayer.cpp:
+
+/usr/include/c++/14/typeinfo:
+
+/usr/include/c++/14/stdexcept:
+
+/usr/include/c++/14/exception:
+
+/usr/include/c++/14/bits/nested_exception.h:
 
 /usr/include/c++/14/bits/cxxabi_init_exception.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/src/TmxText.cpp:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/bits/time64.h:
+
+/usr/include/c++/14/backward/binders.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/include/TmxTerrainArray.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/c++/14/bits/locale_facets.h:
+
+/usr/include/c++/14/bits/basic_string.h:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/bits/errno.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/bits/posix_opt.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/c++/14/bits/locale_classes.tcc:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/c++/14/bits/stl_heap.h:
+
+/usr/include/c++/14/tuple:
+
+/usr/include/c++/14/string_view:
 
 /usr/include/c++/14/pstl/pstl_config.h:
 
 /usr/include/c++/14/bits/std_abs.h:
 
+/usr/include/c++/14/new:
+
+/home/scott/projects/enttTest/deps/tmxparser/src/TmxObject.cpp:
+
+/usr/include/c++/14/bits/max_size_type.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/include/TmxTile.h:
+
+/usr/include/c++/14/iosfwd:
+
+/usr/include/c++/14/bits/exception_ptr.h:
+
+/usr/lib/clang/19/include/stdint.h:
+
 /usr/include/c++/14/ext/string_conversions.h:
 
 /usr/include/c++/14/debug/assertions.h:
 
+/usr/include/c++/14/cstdlib:
+
+/usr/include/bits/endian.h:
+
+/usr/include/c++/14/ext/numeric_traits.h:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h:
+
+/usr/lib/clang/19/include/__stddef_wchar_t.h:
+
 /usr/include/c++/14/cstddef:
+
+/usr/include/locale.h:
 
 /usr/include/c++/14/ostream:
 
 /usr/include/c++/14/compare:
+
+/usr/include/c++/14/clocale:
 
 /usr/include/c++/14/cerrno:
 
@@ -4065,7 +4343,41 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 
 /usr/include/c++/14/bits/version.h:
 
-/usr/include/c++/14/bits/stl_iterator_base_types.h:
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/c++/14/string:
+
+/usr/include/c++/14/climits:
+
+/usr/include/c++/14/cwchar:
+
+/usr/include/c++/14/cstring:
+
+/usr/include/c++/14/bits/exception_defines.h:
+
+/usr/include/bits/timesize.h:
+
+/usr/include/bits/stdint-uintn.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/c++/14/bits/cxxabi_forced.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/include/TmxTerrain.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/c++/14/bits/ostream.tcc:
+
+/usr/include/c++/14/ext/aligned_buffer.h:
+
+/usr/include/c++/14/bits/concept_check.h:
+
+/usr/include/c++/14/bits/functexcept.h:
+
+/usr/include/alloca.h:
+
+/usr/include/c++/14/bits/ptr_traits.h:
 
 /usr/include/bits/wctype-wchar.h:
 
@@ -4081,21 +4393,125 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 
 /usr/include/c++/14/bits/stl_iterator.h:
 
-/usr/include/c++/14/bits/requires_hosted.h:
+/usr/include/c++/14/bit:
 
-/usr/include/strings.h:
+/usr/include/bits/select.h:
 
-/home/scott/projects/enttTest/deps/tmxparser/src/TmxLayer.cpp:
+/usr/lib/clang/19/include/__stdarg___gnuc_va_list.h:
 
-/usr/include/c++/14/bits/ranges_base.h:
+/home/scott/projects/enttTest/deps/tmxparser/src/TmxProperty.cpp:
 
-/usr/include/sys/cdefs.h:
+/usr/lib/clang/19/include/stdarg.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/src/TmxUtil.cpp:
+
+/usr/include/c++/14/type_traits:
+
+/usr/include/c++/14/cctype:
+
+/usr/include/c++/14/bits/char_traits.h:
+
+/usr/include/c++/14/bits/hash_bytes.h:
+
+/usr/include/c++/14/ext/type_traits.h:
+
+/usr/include/limits.h:
+
+/usr/lib/clang/19/include/__stddef_nullptr_t.h:
+
+/usr/include/c++/14/bits/uses_allocator_args.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/c++/14/concepts:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/bits/types.h:
+
+/usr/lib/clang/19/include/__stdarg_va_copy.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/c++/14/bits/uses_allocator.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/include/TmxObject.h:
+
+/usr/include/c++/14/bits/basic_ios.tcc:
+
+/usr/include/c++/14/bits/charconv.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/src/TmxTerrain.cpp:
+
+/usr/include/c++/14/bits/localefwd.h:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
 
 /usr/include/c++/14/x86_64-redhat-linux/bits/error_constants.h:
 
 /usr/include/c++/14/initializer_list:
 
 /usr/include/c++/14/bits/postypes.h:
+
+/usr/lib/clang/19/include/__stddef_size_t.h:
+
+/usr/include/c++/14/map:
+
+/usr/include/bits/locale.h:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/include/TmxImageLayer.h:
+
+/usr/include/c++/14/bits/functional_hash.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/lib/clang/19/include/__stddef_header_macro.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/include/TmxText.h:
+
+/usr/lib/clang/19/include/__stddef_max_align_t.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/include/TmxGroupLayer.h:
+
+/usr/include/errno.h:
+
+/usr/include/bits/getopt_posix.h:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/bits/types/clock_t.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/include/TmxPolyline.h:
+
+/usr/include/c++/14/bits/allocator.h:
+
+/usr/include/string.h:
+
+/usr/include/c++/14/bits/memory_resource.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/src/TmxPolyline.cpp:
+
+/usr/include/bits/stdint-least.h:
+
+/usr/lib/clang/19/include/stddef.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/c++/14/bits/refwrap.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/src/TmxLayer.cpp:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/c++/14/bits/exception.h:
+
+/usr/lib/clang/19/include/__stddef_ptrdiff_t.h:
+
+/usr/include/gnu/stubs.h:
 
 /usr/include/c++/14/cstdio:
 
@@ -4105,101 +4521,45 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 
 /usr/include/bits/types/sigset_t.h:
 
-/usr/include/c++/14/bits/memoryfwd.h:
-
-/usr/include/c++/14/new:
-
-/usr/include/c++/14/bits/hash_bytes.h:
-
-/usr/include/c++/14/bits/char_traits.h:
-
-/usr/include/c++/14/cwchar:
-
-/usr/include/c++/14/cstring:
-
-/usr/include/c++/14/stdexcept:
-
-/usr/include/c++/14/bits/exception_defines.h:
-
-/usr/include/c++/14/bits/functexcept.h:
-
-/usr/include/c++/14/clocale:
-
 /usr/include/c++/14/bits/iterator_concepts.h:
 
 /usr/include/c++/14/stdlib.h:
 
-/usr/include/c++/14/bits/locale_facets.h:
-
-/usr/include/c++/14/bits/basic_string.h:
-
-/usr/include/bits/pthreadtypes.h:
-
-/usr/include/bits/time64.h:
-
-/usr/include/c++/14/backward/binders.h:
-
-/usr/include/bits/byteswap.h:
-
-/usr/include/c++/14/string:
-
-/usr/include/c++/14/climits:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/c++/14/bits/ostream_insert.h:
-
-/usr/include/c++/14/bits/stl_pair.h:
-
-/usr/include/c++/14/bits/alloc_traits.h:
-
-/usr/include/bits/stdint-least.h:
-
-/usr/include/c++/14/bits/ptr_traits.h:
-
-/usr/include/alloca.h:
-
-/usr/include/bits/types/error_t.h:
-
-/usr/include/c++/14/bits/ostream.tcc:
-
-/usr/include/c++/14/ext/aligned_buffer.h:
-
-/usr/include/c++/14/bits/concept_check.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/14/include/syslimits.h:
-
-/usr/include/linux/close_range.h:
-
-/usr/include/c++/14/bits/max_size_type.h:
-
-/home/scott/projects/enttTest/deps/tmxparser/src/TmxObject.cpp:
+/usr/include/c++/14/bits/memoryfwd.h:
 
 /usr/include/bits/struct_mutex.h:
 
 /home/scott/projects/enttTest/deps/tmxparser/include/TmxEllipse.h:
 
-/usr/include/bits/select.h:
+/usr/include/c++/14/bits/stl_pair.h:
 
-/usr/include/c++/14/bits/streambuf_iterator.h:
+/usr/include/c++/14/bits/ostream_insert.h:
 
-/usr/include/c++/14/bits/ranges_cmp.h:
+/usr/include/c++/14/bits/stl_construct.h:
+
+/usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h:
+
+/usr/include/c++/14/bits/predefined_ops.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/c++/14/bits/ranges_base.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/c++/14/bits/range_access.h:
 
 /usr/include/c++/14/array:
 
 /usr/include/bits/types/__fpos64_t.h:
 
-/usr/include/bits/pthreadtypes-arch.h:
+/usr/include/c++/14/bits/streambuf_iterator.h:
 
-/usr/include/bits/long-double.h:
+/usr/include/c++/14/bits/ranges_cmp.h:
 
-/usr/include/bits/libc-header-start.h:
+/usr/include/c++/14/bits/requires_hosted.h:
 
-/usr/include/c++/14/cctype:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/c++/14/bits/exception.h:
+/usr/include/strings.h:
 
 /usr/include/c++/14/cstdint:
 
@@ -4209,115 +4569,15 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 
 /usr/include/c++/14/bits/stl_function.h:
 
-/usr/include/asm-generic/errno.h:
-
-/usr/include/c++/14/iosfwd:
-
-/home/scott/projects/enttTest/deps/tmxparser/include/TmxTile.h:
-
-/usr/include/c++/14/bits/memory_resource.h:
-
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/include/bits/types/clock_t.h:
-
-/home/scott/projects/enttTest/deps/tmxparser/include/TmxPolyline.h:
-
-/usr/include/string.h:
-
-/usr/include/c++/14/bits/allocator.h:
-
-/home/scott/projects/enttTest/deps/tmxparser/src/TmxProperty.cpp:
-
-/usr/include/c++/14/bit:
-
-/usr/include/c++/14/bits/functional_hash.h:
-
-/usr/include/bits/types/timer_t.h:
-
-/home/scott/projects/enttTest/deps/tmxparser/include/TmxText.h:
-
-/usr/include/bits/locale.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/c++/14/bits/cxxabi_forced.h:
-
-/home/scott/projects/enttTest/deps/tmxparser/include/TmxTerrain.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/bits/timesize.h:
-
-/usr/include/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/bits/wchar.h:
-
-/usr/include/bits/waitstatus.h:
-
-/usr/include/bits/stdint-uintn.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/bits/endian.h:
-
-/usr/include/c++/14/cstdlib:
-
-/usr/include/bits/waitflags.h:
-
-/usr/include/ctype.h:
-
-/usr/include/c++/14/bits/locale_classes.tcc:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/c++/14/bits/stl_heap.h:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/include/c++/14/ext/type_traits.h:
-
-/usr/include/limits.h:
-
-/usr/include/bits/types/mbstate_t.h:
-
-/usr/include/c++/14/bits/uses_allocator.h:
-
-/home/scott/projects/enttTest/deps/tmxparser/include/TmxObject.h:
-
-/usr/include/c++/14/bits/localefwd.h:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
-
-/usr/include/c++/14/bits/basic_ios.tcc:
-
-/usr/include/c++/14/bits/charconv.h:
-
-/home/scott/projects/enttTest/deps/tmxparser/src/TmxTerrain.cpp:
-
-/usr/include/bits/types.h:
-
-/usr/include/c++/14/bits/stringfwd.h:
-
-/usr/include/gnu/stubs-64.h:
+/usr/include/c++/14/bits/stl_iterator_base_types.h:
 
 /home/scott/projects/enttTest/deps/tmxparser/include/TmxColor.h:
 
 /usr/include/bits/types/FILE.h:
 
-/home/scott/projects/enttTest/deps/tmxparser/include/TmxTerrainArray.h:
+/usr/include/c++/14/bits/stringfwd.h:
 
-/usr/include/bits/types/__locale_t.h:
-
-/usr/include/c++/14/bits/refwrap.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/bits/posix_opt.h:
+/usr/include/gnu/stubs-64.h:
 
 /usr/include/bits/stdint-intn.h:
 
@@ -4327,11 +4587,29 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 
 /usr/include/bits/types/cookie_io_functions_t.h:
 
-/usr/include/c++/14/concepts:
+/usr/lib/clang/19/include/__stdarg_va_arg.h:
 
-/usr/include/bits/types/struct_timespec.h:
+/usr/include/bits/types/error_t.h:
 
-/usr/include/c++/14/bits/nested_exception.h:
+/usr/lib/clang/19/include/__stddef_null.h:
+
+/usr/include/bits/types/mbstate_t.h:
+
+/usr/include/bits/environments.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/c++/14/ext/alloc_traits.h:
+
+/usr/include/bits/types/wint_t.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/src/TmxGroupLayer.cpp:
 
 /usr/include/bits/typesizes.h:
 
@@ -4339,79 +4617,37 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 
 /usr/include/c++/14/bits/algorithmfwd.h:
 
-/usr/include/c++/14/bits/range_access.h:
+/usr/include/bits/waitflags.h:
 
-/usr/include/c++/14/ext/alloc_traits.h:
+/usr/include/ctype.h:
 
-/usr/include/bits/types/wint_t.h:
+/usr/include/bits/types/struct___jmp_buf_tag.h:
 
-/usr/include/bits/environments.h:
+/usr/include/bits/waitstatus.h:
 
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/c++/14/bits/stl_construct.h:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/c++/14/exception:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/include/c++/14/tuple:
-
-/usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h:
-
-/home/scott/projects/enttTest/deps/tmxparser/src/TmxUtil.cpp:
-
-/usr/include/c++/14/type_traits:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/c++allocator.h:
-
-/usr/include/sys/select.h:
-
-/usr/include/c++/14/bits/predefined_ops.h:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h:
-
-/usr/include/locale.h:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/c++/14/ext/numeric_traits.h:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h:
-
-/home/scott/projects/enttTest/deps/tmxparser/src/TmxTileOffset.cpp:
-
-/usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h:
-
-/home/scott/projects/enttTest/deps/tmxparser/include/TmxImageLayer.h:
+/usr/include/bits/wchar.h:
 
 /usr/include/features-time64.h:
 
 /usr/include/stdc-predef.h:
 
+/usr/include/c++/14/bits/alloc_traits.h:
+
+/usr/lib/clang/19/include/__stdarg___va_copy.h:
+
 /usr/include/bits/wordsize.h:
 
 /usr/include/stdio.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/14/include/stdint.h:
+/usr/include/c++/14/x86_64-redhat-linux/bits/c++allocator.h:
+
+/usr/lib/clang/19/include/__stdarg_header_macro.h:
 
 /usr/include/stdlib.h:
 
 /usr/include/c++/14/algorithm:
 
 /usr/include/sys/types.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/home/scott/projects/enttTest/deps/tmxparser/src/TmxGroupLayer.cpp:
-
-/usr/lib/gcc/x86_64-redhat-linux/14/include/stdarg.h:
-
-/usr/include/c++/14/map:
 
 /usr/include/bits/uio_lim.h:
 
@@ -4437,11 +4673,9 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 
 /usr/include/c++/14/bits/uniform_int_dist.h:
 
-/home/scott/projects/enttTest/deps/tmxparser/include/TmxGroupLayer.h:
+/home/scott/projects/enttTest/deps/tmxparser/src/TmxColor.cpp:
 
-/usr/include/errno.h:
-
-/usr/include/bits/getopt_posix.h:
+/home/scott/projects/enttTest/deps/tmxparser/include/TmxLayer.h:
 
 /usr/include/bits/xopen_lim.h:
 
@@ -4453,23 +4687,13 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 
 /usr/include/c++/14/bits/stl_tempbuf.h:
 
-/usr/include/c++/14/bits/stl_iterator_base_funcs.h:
+/home/scott/projects/enttTest/deps/tmxparser/include/TmxTileOffset.h:
 
-/home/scott/projects/enttTest/deps/tmxparser/include/TmxImage.h:
+/usr/include/linux/errno.h:
 
-/usr/include/assert.h:
+/home/scott/projects/enttTest/deps/tmxparser/include/TmxPropertySet.h:
 
-/home/scott/projects/enttTest/deps/tmxparser/include/TmxTileLayer.h:
-
-/usr/include/c++/14/cassert:
-
-/usr/include/wchar.h:
-
-/usr/include/bits/posix1_lim.h:
-
-/usr/include/c++/14/bits/uses_allocator_args.h:
-
-/usr/include/bits/posix2_lim.h:
+/usr/lib/clang/19/include/limits.h:
 
 /usr/include/c++/14/bits/std_function.h:
 
@@ -4485,9 +4709,9 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 
 /usr/include/bits/sched.h:
 
-/usr/include/features.h:
-
 /usr/include/bits/types/__FILE.h:
+
+/usr/include/features.h:
 
 /usr/include/c++/14/bits/node_handle.h:
 
@@ -4503,15 +4727,23 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 
 /usr/include/c++/14/bits/unordered_map.h:
 
+/home/scott/projects/enttTest/deps/tmxparser/include/TmxTileLayer.h:
+
+/usr/include/c++/14/cassert:
+
+/usr/include/c++/14/bits/stl_iterator_base_funcs.h:
+
+/home/scott/projects/enttTest/deps/tmxparser/include/TmxImage.h:
+
+/usr/include/assert.h:
+
 /home/scott/projects/enttTest/deps/tmxparser/src/TmxTileset.cpp:
 
 /usr/include/c++/14/unordered_map:
 
-/home/scott/projects/enttTest/deps/tmxparser/src/TmxColor.cpp:
+/usr/include/wchar.h:
 
-/home/scott/projects/enttTest/deps/tmxparser/include/TmxLayer.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/14/include/limits.h:
+/usr/include/bits/posix1_lim.h:
 
 /home/scott/projects/enttTest/deps/tmxparser/src/TmxTile.cpp:
 
@@ -4527,9 +4759,9 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 
 /home/scott/projects/enttTest/deps/tmxparser/include/TmxUtil.h:
 
-/usr/include/bits/confname.h:
+/usr/lib/clang/19/include/__stddef_offsetof.h:
 
-/usr/include/bits/getopt_core.h:
+/usr/lib/clang/19/include/__stdarg_va_list.h:
 
 /usr/include/c++/14/bits/ranges_algobase.h:
 
@@ -4538,6 +4770,10 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 /usr/include/c++/14/pstl/execution_defs.h:
 
 /usr/include/c++/14/pstl/glue_algorithm_defs.h:
+
+/usr/include/bits/confname.h:
+
+/usr/include/bits/getopt_core.h:
 
 /usr/include/unistd.h:
 
@@ -4548,8 +4784,6 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 /usr/include/c++/14/bits/basic_ios.h:
 
 /usr/include/zconf.h:
-
-/home/scott/projects/enttTest/deps/tmxparser/src/TmxText.cpp:
 
 /usr/include/bits/uintn-identity.h:
 
@@ -4567,8 +4801,6 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 
 /home/scott/projects/enttTest/deps/tmxparser/src/TmxPolygon.cpp:
 
-/home/scott/projects/enttTest/deps/tmxparser/src/TmxPolyline.cpp:
-
 /usr/include/c++/14/bits/invoke.h:
 
 /home/scott/projects/enttTest/deps/tmxparser/src/TmxPropertySet.cpp:
@@ -4576,15 +4808,3 @@ deps/tmxparser/CMakeFiles/tmxparser.dir/src/base64/base64.cpp.o: /home/scott/pro
 /usr/include/time.h:
 
 /home/scott/projects/enttTest/deps/tmxparser/src/TmxTerrainArray.cpp:
-
-/usr/include/c++/14/bits/exception_ptr.h:
-
-/usr/include/c++/14/typeinfo:
-
-/home/scott/projects/enttTest/deps/tmxparser/src/TmxTileLayer.cpp:
-
-/usr/include/linux/errno.h:
-
-/home/scott/projects/enttTest/deps/tmxparser/include/TmxPropertySet.h:
-
-/home/scott/projects/enttTest/deps/tmxparser/include/TmxTileOffset.h:

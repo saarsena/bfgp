@@ -1,60 +1,78 @@
 deps/tmxparser/CMakeFiles/tmxparser.dir/src/TmxEllipse.cpp.o: \
- /home/scott/projects/enttTest/deps/tmxparser/src/TmxEllipse.cpp \
- /usr/include/stdc-predef.h \
- /home/scott/projects/enttTest/deps/tmxparser/include/TmxEllipse.h \
- /usr/include/c++/14/vector /usr/include/c++/14/bits/requires_hosted.h \
- /usr/include/c++/14/x86_64-redhat-linux/bits/c++config.h \
- /usr/include/bits/wordsize.h \
- /usr/include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
- /usr/include/features.h /usr/include/features-time64.h \
- /usr/include/bits/timesize.h /usr/include/sys/cdefs.h \
- /usr/include/bits/long-double.h /usr/include/gnu/stubs.h \
- /usr/include/gnu/stubs-64.h \
- /usr/include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
- /usr/include/c++/14/pstl/pstl_config.h \
- /usr/include/c++/14/bits/stl_algobase.h \
- /usr/include/c++/14/bits/functexcept.h \
- /usr/include/c++/14/bits/exception_defines.h \
- /usr/include/c++/14/bits/cpp_type_traits.h \
- /usr/include/c++/14/bits/version.h /usr/include/c++/14/ext/type_traits.h \
- /usr/include/c++/14/ext/numeric_traits.h \
- /usr/include/c++/14/bits/stl_pair.h /usr/include/c++/14/type_traits \
- /usr/include/c++/14/bits/move.h /usr/include/c++/14/bits/utility.h \
- /usr/include/c++/14/compare /usr/include/c++/14/concepts \
- /usr/include/c++/14/bits/stl_iterator_base_types.h \
- /usr/include/c++/14/bits/iterator_concepts.h \
- /usr/include/c++/14/bits/ptr_traits.h \
- /usr/include/c++/14/bits/ranges_cmp.h \
- /usr/include/c++/14/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/14/bits/concept_check.h \
- /usr/include/c++/14/debug/assertions.h \
- /usr/include/c++/14/bits/stl_iterator.h /usr/include/c++/14/new \
- /usr/include/c++/14/bits/exception.h \
- /usr/include/c++/14/bits/stl_construct.h \
- /usr/include/c++/14/debug/debug.h \
- /usr/include/c++/14/bits/predefined_ops.h /usr/include/c++/14/bit \
- /usr/include/c++/14/bits/allocator.h \
- /usr/include/c++/14/x86_64-redhat-linux/bits/c++allocator.h \
- /usr/include/c++/14/bits/new_allocator.h \
- /usr/include/c++/14/bits/memoryfwd.h \
- /usr/include/c++/14/bits/stl_uninitialized.h \
- /usr/include/c++/14/ext/alloc_traits.h \
- /usr/include/c++/14/bits/alloc_traits.h \
- /usr/include/c++/14/bits/stl_vector.h \
- /usr/include/c++/14/initializer_list \
- /usr/include/c++/14/bits/stl_bvector.h \
- /usr/include/c++/14/bits/functional_hash.h \
- /usr/include/c++/14/bits/hash_bytes.h /usr/include/c++/14/bits/refwrap.h \
- /usr/include/c++/14/bits/invoke.h \
- /usr/include/c++/14/bits/stl_function.h \
- /usr/include/c++/14/backward/binders.h \
- /usr/include/c++/14/bits/range_access.h \
- /usr/include/c++/14/bits/vector.tcc \
- /usr/include/c++/14/bits/memory_resource.h /usr/include/c++/14/cstddef \
- /usr/lib/gcc/x86_64-redhat-linux/14/include/stddef.h \
- /usr/include/c++/14/bits/uses_allocator.h \
- /usr/include/c++/14/bits/uses_allocator_args.h /usr/include/c++/14/tuple \
- /usr/include/c++/14/bits/ranges_util.h \
- /usr/include/c++/14/bits/ranges_base.h \
- /usr/include/c++/14/bits/max_size_type.h /usr/include/c++/14/numbers \
- /home/scott/projects/enttTest/deps/tmxparser/include/TmxPoint.h
+  /home/scott/projects/enttTest/deps/tmxparser/src/TmxEllipse.cpp \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxEllipse.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/vector \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/requires_hosted.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux/bits/c++config.h \
+  /usr/include/bits/wordsize.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/features.h /usr/include/features-time64.h \
+  /usr/include/bits/timesize.h /usr/include/stdc-predef.h \
+  /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
+  /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/pstl/pstl_config.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/stl_algobase.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/functexcept.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/exception_defines.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/cpp_type_traits.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/version.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/ext/type_traits.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/ext/numeric_traits.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/stl_pair.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/type_traits \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/move.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/utility.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/compare \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/concepts \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/stl_iterator_base_types.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/iterator_concepts.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/ptr_traits.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/ranges_cmp.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/stl_iterator_base_funcs.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/concept_check.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/debug/assertions.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/stl_iterator.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/new \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/exception.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/stl_construct.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/debug/debug.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/predefined_ops.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bit \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/allocator.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/x86_64-redhat-linux/bits/c++allocator.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/new_allocator.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/memoryfwd.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/stl_uninitialized.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/ext/alloc_traits.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/alloc_traits.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/stl_vector.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/initializer_list \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/stl_bvector.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/functional_hash.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/hash_bytes.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/refwrap.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/invoke.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/stl_function.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/backward/binders.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/range_access.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/vector.tcc \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/memory_resource.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/cstddef \
+  /usr/bin/../lib/clang/19/include/stddef.h \
+  /usr/bin/../lib/clang/19/include/__stddef_header_macro.h \
+  /usr/bin/../lib/clang/19/include/__stddef_ptrdiff_t.h \
+  /usr/bin/../lib/clang/19/include/__stddef_size_t.h \
+  /usr/bin/../lib/clang/19/include/__stddef_wchar_t.h \
+  /usr/bin/../lib/clang/19/include/__stddef_null.h \
+  /usr/bin/../lib/clang/19/include/__stddef_nullptr_t.h \
+  /usr/bin/../lib/clang/19/include/__stddef_max_align_t.h \
+  /usr/bin/../lib/clang/19/include/__stddef_offsetof.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/uses_allocator.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/uses_allocator_args.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/tuple \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/ranges_util.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/ranges_base.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/bits/max_size_type.h \
+  /usr/bin/../lib/gcc/x86_64-redhat-linux/14/../../../../include/c++/14/numbers \
+  /home/scott/projects/enttTest/deps/tmxparser/include/TmxPoint.h

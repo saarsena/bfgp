@@ -1,12 +1,17 @@
 #pragma once
 
+#include "../deps/tmxparser/include/TmxMap.h"
+#include "../deps/tmxparser/include/TmxTile.h"
 #include "Tags.h"
-#include "TmxMap.h"
-#include "TmxTile.h"
+#include <SDL.h>
+#include <SDL_image.h>
 #include <entt/entt.hpp>
 #include <filesystem>
 #include <string>
+#include <unordered_map>
 #include <vector>
+
+#include "core/Components.h"
 
 // Forward declarations for Tmx types
 namespace Tmx {
@@ -24,16 +29,22 @@ private:
   bool loaded;
   std::string currentMapPath;
   std::filesystem::file_time_type lastModifiedTime;
+  entt::registry *registry;
+  SDL_Renderer *renderer;
+  std::unordered_map<int, SDL_Texture *>
+      tilesetTextures; // Map tileset index to texture
+  std::unordered_map<std::string, SDL_Texture *>
+      namedTilesetTextures; // Map tileset name to texture
 
 public:
-  TmxMapLoader();
+  TmxMapLoader(SDL_Renderer *renderer);
   ~TmxMapLoader();
 
-  bool loadMap(const std::string &filepath, entt::registry &registry);
-  bool isLoaded() const;
-  std::string getCurrentMapPath() const;
-  bool isMapModified() const;
+  void setRenderer(SDL_Renderer *renderer) { this->renderer = renderer; }
+  bool loadMap(const std::string &path, entt::registry &registry);
   bool reloadIfModified();
+  bool isMapModified() const;
+  bool isLoaded() const { return loaded; }
 
   // Print methods
   void printMapInfo() const;
@@ -64,7 +75,17 @@ public:
   // Collision checking
   bool isTileCollidable(int gid) const;
 
+  // Collision checking
+  bool isTileFloor(int gid) const;
+
   // Create collider entities from a tile layer
   void createColliderEntities(entt::registry &registry, int layerIndex,
                               int tileWidth, int tileHeight) const;
+
+  // Rendering
+  void render(SDL_Renderer *renderer, int offsetX = 0, int offsetY = 0);
+  SDL_Rect getTileRect(int tileIndex, int tilesetCols = 4,
+                       int tilesetRows = 4) const;
+  SDL_Texture *getTilesetTexture(const std::string &tilesetName) const;
+  void setTilesetTexture(const std::string &tilesetName, SDL_Texture *texture);
 };

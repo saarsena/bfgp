@@ -1,7 +1,3 @@
-/home/scott/projects/enttTest/build/CMakeFiles/scheduler_demo.dir
-/home/scott/projects/enttTest/build/CMakeFiles/scheduler_example.dir
-/home/scott/projects/enttTest/build/CMakeFiles/entt_event_example.dir
-/home/scott/projects/enttTest/build/CMakeFiles/dungeon_example.dir
 /home/scott/projects/enttTest/build/CMakeFiles/collision_test.dir
 /home/scott/projects/enttTest/build/CMakeFiles/edit_cache.dir
 /home/scott/projects/enttTest/build/CMakeFiles/rebuild_cache.dir

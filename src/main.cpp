@@ -3,6 +3,7 @@
 #include "../include/core/GameManager.h"
 #include "../include/core/TmxMapLoader.h"
 #include "../include/scheduler/Scheduler.h"
+#include <SDL.h>
 #include <entt/entt.hpp>
 #include <functional>
 #include <iostream>
@@ -45,11 +46,39 @@ void runGame() {
 void debugMapLoader() {
   std::cout << "\n=== TMX Map Debug Info ===\n";
 
+  // Initialize SDL
+  if (SDL_Init(SDL_INIT_VIDEO) < 0) {
+    std::cerr << "SDL initialization failed: " << SDL_GetError() << std::endl;
+    return;
+  }
+
+  // Create a temporary window and renderer
+  SDL_Window *window =
+      SDL_CreateWindow("TMX Debug", SDL_WINDOWPOS_CENTERED,
+                       SDL_WINDOWPOS_CENTERED, 800, 600, SDL_WINDOW_HIDDEN);
+  if (!window) {
+    std::cerr << "Window creation failed: " << SDL_GetError() << std::endl;
+    SDL_Quit();
+    return;
+  }
+
+  SDL_Renderer *renderer =
+      SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
+  if (!renderer) {
+    std::cerr << "Renderer creation failed: " << SDL_GetError() << std::endl;
+    SDL_DestroyWindow(window);
+    SDL_Quit();
+    return;
+  }
+
   entt::registry registry;
-  TmxMapLoader mapLoader;
+  TmxMapLoader mapLoader(renderer);
 
   if (!mapLoader.loadMap("assets/tg_tiled_example.tmx", registry)) {
     std::cerr << "Failed to load map for debugging!" << std::endl;
+    SDL_DestroyRenderer(renderer);
+    SDL_DestroyWindow(window);
+    SDL_Quit();
     return;
   }
 
@@ -60,6 +89,11 @@ void debugMapLoader() {
   mapLoader.printObjectGroups();
 
   std::cout << "\nMap loaded successfully!\n";
+
+  // Clean up
+  SDL_DestroyRenderer(renderer);
+  SDL_DestroyWindow(window);
+  SDL_Quit();
 }
 
 int main(int argc, char *argv[]) {

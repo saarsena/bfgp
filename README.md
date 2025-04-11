@@ -1,85 +1,131 @@
-MIT License
+# 🕹️ Entropic Engine
 
-Copyright (c) 2025 Scott Arsenault
+_A minimal, modular game engine built in C++ using SDL2 and EnTT._
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This engine serves as a foundation for tile-based simulations and procedural storytelling. It uses an ECS (Entity Component System) pattern for clarity, scalability, and speed.
 
 ---
 
-# BFGP - Barebones Framework for Game Prototyping
+## 1. Introduction
 
-**Author**: Scott Arsenault
+This document outlines the architecture and implementation of a minimalist game engine designed with a focus on emergent behavior and modular simulation systems.
 
-**License**: MIT
-
-## 🚀 Overview
-BFGP is a high-performance, tile-based game engine prototype written in C++ using SDL2, EnTT, and a TMX map parser. It’s designed as a flexible foundation for building roguelikes, tactical RPGs, or simulation games with modding support and a fast, terminal-driven workflow.
-
-## 🔧 Features
-- ✅ TMX map loading with multiple layers, tilesets, and objects
-- ✅ Integrated hot-reloading system for maps
-- ✅ Turn- and tick-based scheduler system using EnTT
-- ✅ Real-time and turn-based ready
-- ✅ Modular architecture for clean expansion
-
-## 🛠 Getting Started
-
-### Requirements
-- CMake 3.16+
-- SDL2, SDL2_image, SDL2_ttf, SDL2_mixer
-- TmxParser (https://github.com/libgdx/tiled/tree/master/tools/libtmx)
-- A C++20-capable compiler (Clang or GCC recommended)
-
-### Build
-```bash
-git clone https://github.com/YOURNAME/bfgp.git
-cd bfgp
-cmake -B build
-cmake --build build -j$(nproc)
-./build/scheduler_demo
-```
-
-### Example
-When you run the demo, it:
-- Loads a `.tmx` map
-- Prints tile and layer info
-- Hot-reloads maps as you edit and save in Tiled
-- Moves a player character using SDL input
-
-## 🧠 Philosophy
-This project emphasizes clarity and low overhead. It’s meant to be dissected, hacked, and evolved — a kind of spiritual successor to Zachtronics design ethos, tailored for procedural storytelling.
-
-## 📁 Project Layout
-```
-├── assets/                # Your TMX maps and tilesets
-├── include/              # EnTT and Tmx headers
-├── src/                  # Core engine source files
-├── main.cpp              # Entry point with demo usage
-├── CMakeLists.txt        # Build configuration
-└── LICENSE               # MIT license
-```
-
-## 🤝 Contributing
-This is currently a solo dev project. Fork away, mod it, ship it — and let me know if you build something rad!
+Built in **C++**, using **SDL2** for rendering/input and **EnTT** for ECS, the engine is ideal for prototyping or building full 2D games from scratch.
 
 ---
-Let’s prototype some weird, beautiful shit.
-—Scott
 
+## 2. Architecture
 
+### 2.1 Core Systems
+
+#### 2.1.1 `GameManager`
+
+The central orchestrator. Manages the SDL window, renderer, and access to other systems like input and rendering.
+
+#### 2.1.2 `InputHandler`
+
+Processes SDL events and translates them into game actions. Supports:
+- Keyboard + mouse input
+- Camera movement and zoom
+- Modifier-based debug commands
+
+#### 2.1.3 `CollisionSystem`
+
+A lightweight grid-based collision detection system for entities tagged as collidable.
+
+---
+
+### 2.2 Entity Component System (EnTT)
+
+#### 2.2.1 Components
+
+- `PositionComponent`: Stores world coordinates
+- `CollisionComponent`: Tags an entity as collidable
+- `PlayerMarker`: Identifies the player
+- `TileColliderTag`: Used for static tile collisions
+
+#### 2.2.2 Systems
+
+Each system operates over filtered entity sets. Example: the collision system processes all entities with `PositionComponent` and `CollisionComponent`.
+
+---
+
+### 2.3 Rendering
+
+Rendering is SDL2-based, and debug tools use ImGui overlays.
+
+The game renders:
+- Entities
+- Map tiles
+- UI overlays for debugging, memory, and world inspection
+
+---
+
+## 3. Implementation Details
+
+### 3.1 Game Loop
+
+Uses a fixed timestep model:
+1. Measure `deltaTime`
+2. Handle input
+3. Update logic
+4. Render world + debug UI
+
+### 3.2 Input Handling
+
+Translates SDL events into entity modifications and camera actions.
+
+### 3.3 Collision Detection
+
+Spatial grid check between all `CollisionComponent`-tagged entities.
+
+### 3.4 Entity Management
+
+Entities are managed with EnTT's `registry`. All creation, deletion, and query operations are handled through it.
+
+---
+
+## 4. Usage
+
+Create an instance of the `CollisionTest` class and call `run()`:
+
+```cpp
+int main() {
+    CollisionTest game;
+    game.run();
+    return 0;
+}
+```
+
+The engine handles:
+- Input
+- Update ticks
+- Hot-reloading `.tmx` maps from Tiled
+- Debug visualization
+
+---
+
+## 5. Future Enhancements
+
+- AI behavior trees and state machines
+- Audio (SDL_mixer)
+- Resource and asset management
+- Advanced tilemap support
+- Story or dialogue systems
+- Export simulation history
+- Custom scripting or plugin support
+
+---
+
+## 6. Conclusion
+
+This engine is lightweight, fast, and built for evolution.
+
+It’s ideal for:
+- Procedural simulations
+- Tactical RPGs
+- Rogue-inspired games
+- Experimental emergent storytelling
+
+> Designed for clarity, built for chaos.  
+> _2025-04-10_

@@ -1,6 +1,7 @@
 #pragma once
 #include "../events/EventBus.h"
 #include "Components.h"
+#include "events/GameEvent.h"
 #include <SDL.h>
 #include <entt/entt.hpp>
 
@@ -20,6 +21,7 @@ public:
   // Getters
   int getTileX() const { return position.x; }
   int getTileY() const { return position.y; }
+  entt::entity getEntity() const { return entity; }
 
 private:
   entt::registry &registry;

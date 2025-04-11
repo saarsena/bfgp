@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Constants.h"
+#include <SDL.h>
 #include <string>
 
 // Core game components
@@ -61,6 +63,9 @@ struct PositionComponent {
 
 struct CollisionComponent {
   bool isBlocking; // true for walls, false for passable entities
+  int width = Constants::Sprites::DEFAULT_TILE_WIDTH;
+  int height = Constants::Sprites::DEFAULT_TILE_HEIGHT;
+
   CollisionComponent(bool blocking) : isBlocking(blocking) {}
 };
 
@@ -72,6 +77,44 @@ struct TestComponent {
 // Marker component to identify the player entity
 struct PlayerMarker {
   // Empty marker component
+};
+
+// Marker component to identify tile colliders
+struct TileColliderTag {
+  // Empty marker component
+};
+
+// Marker component to identify floor tiles
+struct FloorTag {
+  // Empty marker component
+};
+
+// Marker component to identify mob entities
+struct MobTag {
+  // Empty marker component
+};
+
+// Component for wandering behavior
+struct WanderComponent {
+  int direction = -1; // 0 = up, 1 = right, 2 = down, 3 = left
+  Uint32 lastMoveTime = 0;
+  Uint32 moveCooldown = 1000; // ms between steps
+};
+
+// Sprite component for rendering entities using tileset sprites or custom
+// textures
+struct SpriteComponent {
+  std::string tilesetName;
+  int tileId;
+  SDL_Texture *customTexture;
+
+  // Constructor for tileset-based sprites
+  SpriteComponent(const std::string &tileset, int id)
+      : tilesetName(tileset), tileId(id), customTexture(nullptr) {}
+
+  // Constructor for custom textures
+  SpriteComponent(SDL_Texture *texture)
+      : tilesetName(""), tileId(0), customTexture(texture) {}
 };
 
 } // namespace Components

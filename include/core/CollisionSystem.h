@@ -1,7 +1,11 @@
 #pragma once
 
+#include "../events/EventBus.h"
+#include "../events/GameEvent.h"
 #include "Components.h"
-#include <entt/entt.hpp>
+#include <SDL2/SDL.h>
+#include <entt/entity/registry.hpp>
+#include <vector>
 
 class CollisionSystem {
 public:
@@ -25,6 +29,49 @@ public:
         });
 
     return collisionDetected;
+  }
+
+  // Check if a move would result in a collision and handle the movement
+  static bool TryMove(entt::registry &registry, entt::entity entity, int dx,
+                      int dy, EventBus &eventBus) {
+    if (!registry.valid(entity)) {
+      return false;
+    }
+
+    auto *pos = registry.try_get<Components::PositionComponent>(entity);
+    if (!pos) {
+      return false;
+    }
+
+    // Create a temporary position to test
+    Components::PositionComponent newPos{pos->x + dx, pos->y + dy};
+
+    // Check for collisions before moving
+    bool canMove = true;
+    auto collisions = registry.view<Components::CollisionComponent,
+                                    Components::PositionComponent>();
+    for (auto [collider, collision, colliderPos] : collisions.each()) {
+      if (colliderPos.x == newPos.x && colliderPos.y == newPos.y) {
+        if (collision.isBlocking) {
+          canMove = false;
+          break;
+        }
+      }
+    }
+
+    if (canMove) {
+      // Update position
+      pos->x = newPos.x;
+      pos->y = newPos.y;
+
+      // Emit movement event if it's a player
+      if (registry.all_of<Components::PlayerMarker>(entity)) {
+        PlayerMovedEvent event(pos->x, pos->y);
+        eventBus.publish(event);
+      }
+    }
+
+    return canMove;
   }
 
   // Check if two specific entities are colliding
@@ -69,6 +116,29 @@ public:
         });
 
     return collidingEntities;
+  }
+
+  // Create a wall with collision components
+  static void CreateWall(entt::registry &registry, int tileX, int tileY,
+                         int wallWidth, int wallHeight, int tileWidth,
+                         int tileHeight,
+                         std::vector<SDL_Rect> &collisionObjects) {
+    // Create collision components for every tile in the wall
+    for (int x = tileX; x < tileX + wallWidth; x++) {
+      for (int y = tileY; y < tileY + wallHeight; y++) {
+        auto entity = registry.create();
+        registry.emplace<Components::PositionComponent>(entity, x, y);
+        registry.emplace<Components::CollisionComponent>(entity, true);
+        registry.emplace<Components::SpriteComponent>(
+            entity, Constants::Sprites::Tilesets::MAIN_TILESET,
+            Constants::Sprites::IDs::WALL);
+      }
+    }
+
+    // Convert tile coordinates to pixel coordinates for rendering
+    collisionObjects.push_back({tileX * tileWidth, tileY * tileHeight,
+                                wallWidth * tileWidth,
+                                wallHeight * tileHeight});
   }
 
   // Update positions while checking for collisions

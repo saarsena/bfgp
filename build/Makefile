@@ -162,58 +162,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named scheduler_demo
-
-# Build rule for target.
-scheduler_demo: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scheduler_demo
-.PHONY : scheduler_demo
-
-# fast build rule for target.
-scheduler_demo/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/build
-.PHONY : scheduler_demo/fast
-
-#=============================================================================
-# Target rules for targets named scheduler_example
-
-# Build rule for target.
-scheduler_example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scheduler_example
-.PHONY : scheduler_example
-
-# fast build rule for target.
-scheduler_example/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/build
-.PHONY : scheduler_example/fast
-
-#=============================================================================
-# Target rules for targets named entt_event_example
-
-# Build rule for target.
-entt_event_example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 entt_event_example
-.PHONY : entt_event_example
-
-# fast build rule for target.
-entt_event_example/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/entt_event_example.dir/build.make CMakeFiles/entt_event_example.dir/build
-.PHONY : entt_event_example/fast
-
-#=============================================================================
-# Target rules for targets named dungeon_example
-
-# Build rule for target.
-dungeon_example: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dungeon_example
-.PHONY : dungeon_example
-
-# fast build rule for target.
-dungeon_example/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dungeon_example.dir/build.make CMakeFiles/dungeon_example.dir/build
-.PHONY : dungeon_example/fast
-
-#=============================================================================
 # Target rules for targets named collision_test
 
 # Build rule for target.
@@ -244,7 +192,6 @@ examples/CollisionTest.o: examples/CollisionTest.cpp.o
 
 # target to build an object file
 examples/CollisionTest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/examples/CollisionTest.cpp.o
 .PHONY : examples/CollisionTest.cpp.o
 
@@ -253,7 +200,6 @@ examples/CollisionTest.i: examples/CollisionTest.cpp.i
 
 # target to preprocess a source file
 examples/CollisionTest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/examples/CollisionTest.cpp.i
 .PHONY : examples/CollisionTest.cpp.i
 
@@ -262,63 +208,8 @@ examples/CollisionTest.s: examples/CollisionTest.cpp.s
 
 # target to generate assembly for a file
 examples/CollisionTest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/CollisionTest.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/examples/CollisionTest.cpp.s
 .PHONY : examples/CollisionTest.cpp.s
-
-examples/EnttEventExample.o: examples/EnttEventExample.cpp.o
-.PHONY : examples/EnttEventExample.o
-
-# target to build an object file
-examples/EnttEventExample.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/entt_event_example.dir/build.make CMakeFiles/entt_event_example.dir/examples/EnttEventExample.cpp.o
-.PHONY : examples/EnttEventExample.cpp.o
-
-examples/EnttEventExample.i: examples/EnttEventExample.cpp.i
-.PHONY : examples/EnttEventExample.i
-
-# target to preprocess a source file
-examples/EnttEventExample.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/entt_event_example.dir/build.make CMakeFiles/entt_event_example.dir/examples/EnttEventExample.cpp.i
-.PHONY : examples/EnttEventExample.cpp.i
-
-examples/EnttEventExample.s: examples/EnttEventExample.cpp.s
-.PHONY : examples/EnttEventExample.s
-
-# target to generate assembly for a file
-examples/EnttEventExample.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/EnttEventExample.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/entt_event_example.dir/build.make CMakeFiles/entt_event_example.dir/examples/EnttEventExample.cpp.s
-.PHONY : examples/EnttEventExample.cpp.s
-
-examples/SchedulerExample.o: examples/SchedulerExample.cpp.o
-.PHONY : examples/SchedulerExample.o
-
-# target to build an object file
-examples/SchedulerExample.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/examples/SchedulerExample.cpp.o
-.PHONY : examples/SchedulerExample.cpp.o
-
-examples/SchedulerExample.i: examples/SchedulerExample.cpp.i
-.PHONY : examples/SchedulerExample.i
-
-# target to preprocess a source file
-examples/SchedulerExample.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/examples/SchedulerExample.cpp.i
-.PHONY : examples/SchedulerExample.cpp.i
-
-examples/SchedulerExample.s: examples/SchedulerExample.cpp.s
-.PHONY : examples/SchedulerExample.s
-
-# target to generate assembly for a file
-examples/SchedulerExample.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/examples/SchedulerExample.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/examples/SchedulerExample.cpp.s
-.PHONY : examples/SchedulerExample.cpp.s
 
 examples/mains/collision_test_main.o: examples/mains/collision_test_main.cpp.o
 .PHONY : examples/mains/collision_test_main.o
@@ -344,84 +235,180 @@ examples/mains/collision_test_main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/examples/mains/collision_test_main.cpp.s
 .PHONY : examples/mains/collision_test_main.cpp.s
 
-examples/mains/dungeon_example_main.o: examples/mains/dungeon_example_main.cpp.o
-.PHONY : examples/mains/dungeon_example_main.o
+externals/imgui/backends/imgui_impl_sdl2.o: externals/imgui/backends/imgui_impl_sdl2.cpp.o
+.PHONY : externals/imgui/backends/imgui_impl_sdl2.o
 
 # target to build an object file
-examples/mains/dungeon_example_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dungeon_example.dir/build.make CMakeFiles/dungeon_example.dir/examples/mains/dungeon_example_main.cpp.o
-.PHONY : examples/mains/dungeon_example_main.cpp.o
+externals/imgui/backends/imgui_impl_sdl2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/backends/imgui_impl_sdl2.cpp.o
+.PHONY : externals/imgui/backends/imgui_impl_sdl2.cpp.o
 
-examples/mains/dungeon_example_main.i: examples/mains/dungeon_example_main.cpp.i
-.PHONY : examples/mains/dungeon_example_main.i
+externals/imgui/backends/imgui_impl_sdl2.i: externals/imgui/backends/imgui_impl_sdl2.cpp.i
+.PHONY : externals/imgui/backends/imgui_impl_sdl2.i
 
 # target to preprocess a source file
-examples/mains/dungeon_example_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dungeon_example.dir/build.make CMakeFiles/dungeon_example.dir/examples/mains/dungeon_example_main.cpp.i
-.PHONY : examples/mains/dungeon_example_main.cpp.i
+externals/imgui/backends/imgui_impl_sdl2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/backends/imgui_impl_sdl2.cpp.i
+.PHONY : externals/imgui/backends/imgui_impl_sdl2.cpp.i
 
-examples/mains/dungeon_example_main.s: examples/mains/dungeon_example_main.cpp.s
-.PHONY : examples/mains/dungeon_example_main.s
+externals/imgui/backends/imgui_impl_sdl2.s: externals/imgui/backends/imgui_impl_sdl2.cpp.s
+.PHONY : externals/imgui/backends/imgui_impl_sdl2.s
 
 # target to generate assembly for a file
-examples/mains/dungeon_example_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dungeon_example.dir/build.make CMakeFiles/dungeon_example.dir/examples/mains/dungeon_example_main.cpp.s
-.PHONY : examples/mains/dungeon_example_main.cpp.s
+externals/imgui/backends/imgui_impl_sdl2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/backends/imgui_impl_sdl2.cpp.s
+.PHONY : externals/imgui/backends/imgui_impl_sdl2.cpp.s
 
-examples/mains/entt_event_example_main.o: examples/mains/entt_event_example_main.cpp.o
-.PHONY : examples/mains/entt_event_example_main.o
+externals/imgui/backends/imgui_impl_sdlrenderer2.o: externals/imgui/backends/imgui_impl_sdlrenderer2.cpp.o
+.PHONY : externals/imgui/backends/imgui_impl_sdlrenderer2.o
 
 # target to build an object file
-examples/mains/entt_event_example_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/entt_event_example.dir/build.make CMakeFiles/entt_event_example.dir/examples/mains/entt_event_example_main.cpp.o
-.PHONY : examples/mains/entt_event_example_main.cpp.o
+externals/imgui/backends/imgui_impl_sdlrenderer2.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/backends/imgui_impl_sdlrenderer2.cpp.o
+.PHONY : externals/imgui/backends/imgui_impl_sdlrenderer2.cpp.o
 
-examples/mains/entt_event_example_main.i: examples/mains/entt_event_example_main.cpp.i
-.PHONY : examples/mains/entt_event_example_main.i
+externals/imgui/backends/imgui_impl_sdlrenderer2.i: externals/imgui/backends/imgui_impl_sdlrenderer2.cpp.i
+.PHONY : externals/imgui/backends/imgui_impl_sdlrenderer2.i
 
 # target to preprocess a source file
-examples/mains/entt_event_example_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/entt_event_example.dir/build.make CMakeFiles/entt_event_example.dir/examples/mains/entt_event_example_main.cpp.i
-.PHONY : examples/mains/entt_event_example_main.cpp.i
+externals/imgui/backends/imgui_impl_sdlrenderer2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/backends/imgui_impl_sdlrenderer2.cpp.i
+.PHONY : externals/imgui/backends/imgui_impl_sdlrenderer2.cpp.i
 
-examples/mains/entt_event_example_main.s: examples/mains/entt_event_example_main.cpp.s
-.PHONY : examples/mains/entt_event_example_main.s
+externals/imgui/backends/imgui_impl_sdlrenderer2.s: externals/imgui/backends/imgui_impl_sdlrenderer2.cpp.s
+.PHONY : externals/imgui/backends/imgui_impl_sdlrenderer2.s
 
 # target to generate assembly for a file
-examples/mains/entt_event_example_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/entt_event_example.dir/build.make CMakeFiles/entt_event_example.dir/examples/mains/entt_event_example_main.cpp.s
-.PHONY : examples/mains/entt_event_example_main.cpp.s
+externals/imgui/backends/imgui_impl_sdlrenderer2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/backends/imgui_impl_sdlrenderer2.cpp.s
+.PHONY : externals/imgui/backends/imgui_impl_sdlrenderer2.cpp.s
 
-examples/mains/scheduler_example_main.o: examples/mains/scheduler_example_main.cpp.o
-.PHONY : examples/mains/scheduler_example_main.o
+externals/imgui/imgui.o: externals/imgui/imgui.cpp.o
+.PHONY : externals/imgui/imgui.o
 
 # target to build an object file
-examples/mains/scheduler_example_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/examples/mains/scheduler_example_main.cpp.o
-.PHONY : examples/mains/scheduler_example_main.cpp.o
+externals/imgui/imgui.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui.cpp.o
+.PHONY : externals/imgui/imgui.cpp.o
 
-examples/mains/scheduler_example_main.i: examples/mains/scheduler_example_main.cpp.i
-.PHONY : examples/mains/scheduler_example_main.i
+externals/imgui/imgui.i: externals/imgui/imgui.cpp.i
+.PHONY : externals/imgui/imgui.i
 
 # target to preprocess a source file
-examples/mains/scheduler_example_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/examples/mains/scheduler_example_main.cpp.i
-.PHONY : examples/mains/scheduler_example_main.cpp.i
+externals/imgui/imgui.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui.cpp.i
+.PHONY : externals/imgui/imgui.cpp.i
 
-examples/mains/scheduler_example_main.s: examples/mains/scheduler_example_main.cpp.s
-.PHONY : examples/mains/scheduler_example_main.s
+externals/imgui/imgui.s: externals/imgui/imgui.cpp.s
+.PHONY : externals/imgui/imgui.s
 
 # target to generate assembly for a file
-examples/mains/scheduler_example_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_example.dir/build.make CMakeFiles/scheduler_example.dir/examples/mains/scheduler_example_main.cpp.s
-.PHONY : examples/mains/scheduler_example_main.cpp.s
+externals/imgui/imgui.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui.cpp.s
+.PHONY : externals/imgui/imgui.cpp.s
+
+externals/imgui/imgui_demo.o: externals/imgui/imgui_demo.cpp.o
+.PHONY : externals/imgui/imgui_demo.o
+
+# target to build an object file
+externals/imgui/imgui_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui_demo.cpp.o
+.PHONY : externals/imgui/imgui_demo.cpp.o
+
+externals/imgui/imgui_demo.i: externals/imgui/imgui_demo.cpp.i
+.PHONY : externals/imgui/imgui_demo.i
+
+# target to preprocess a source file
+externals/imgui/imgui_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui_demo.cpp.i
+.PHONY : externals/imgui/imgui_demo.cpp.i
+
+externals/imgui/imgui_demo.s: externals/imgui/imgui_demo.cpp.s
+.PHONY : externals/imgui/imgui_demo.s
+
+# target to generate assembly for a file
+externals/imgui/imgui_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui_demo.cpp.s
+.PHONY : externals/imgui/imgui_demo.cpp.s
+
+externals/imgui/imgui_draw.o: externals/imgui/imgui_draw.cpp.o
+.PHONY : externals/imgui/imgui_draw.o
+
+# target to build an object file
+externals/imgui/imgui_draw.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui_draw.cpp.o
+.PHONY : externals/imgui/imgui_draw.cpp.o
+
+externals/imgui/imgui_draw.i: externals/imgui/imgui_draw.cpp.i
+.PHONY : externals/imgui/imgui_draw.i
+
+# target to preprocess a source file
+externals/imgui/imgui_draw.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui_draw.cpp.i
+.PHONY : externals/imgui/imgui_draw.cpp.i
+
+externals/imgui/imgui_draw.s: externals/imgui/imgui_draw.cpp.s
+.PHONY : externals/imgui/imgui_draw.s
+
+# target to generate assembly for a file
+externals/imgui/imgui_draw.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui_draw.cpp.s
+.PHONY : externals/imgui/imgui_draw.cpp.s
+
+externals/imgui/imgui_tables.o: externals/imgui/imgui_tables.cpp.o
+.PHONY : externals/imgui/imgui_tables.o
+
+# target to build an object file
+externals/imgui/imgui_tables.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui_tables.cpp.o
+.PHONY : externals/imgui/imgui_tables.cpp.o
+
+externals/imgui/imgui_tables.i: externals/imgui/imgui_tables.cpp.i
+.PHONY : externals/imgui/imgui_tables.i
+
+# target to preprocess a source file
+externals/imgui/imgui_tables.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui_tables.cpp.i
+.PHONY : externals/imgui/imgui_tables.cpp.i
+
+externals/imgui/imgui_tables.s: externals/imgui/imgui_tables.cpp.s
+.PHONY : externals/imgui/imgui_tables.s
+
+# target to generate assembly for a file
+externals/imgui/imgui_tables.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui_tables.cpp.s
+.PHONY : externals/imgui/imgui_tables.cpp.s
+
+externals/imgui/imgui_widgets.o: externals/imgui/imgui_widgets.cpp.o
+.PHONY : externals/imgui/imgui_widgets.o
+
+# target to build an object file
+externals/imgui/imgui_widgets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui_widgets.cpp.o
+.PHONY : externals/imgui/imgui_widgets.cpp.o
+
+externals/imgui/imgui_widgets.i: externals/imgui/imgui_widgets.cpp.i
+.PHONY : externals/imgui/imgui_widgets.i
+
+# target to preprocess a source file
+externals/imgui/imgui_widgets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui_widgets.cpp.i
+.PHONY : externals/imgui/imgui_widgets.cpp.i
+
+externals/imgui/imgui_widgets.s: externals/imgui/imgui_widgets.cpp.s
+.PHONY : externals/imgui/imgui_widgets.s
+
+# target to generate assembly for a file
+externals/imgui/imgui_widgets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/externals/imgui/imgui_widgets.cpp.s
+.PHONY : externals/imgui/imgui_widgets.cpp.s
 
 src/GameManager.o: src/GameManager.cpp.o
 .PHONY : src/GameManager.o
 
 # target to build an object file
 src/GameManager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/GameManager.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/GameManager.cpp.o
 .PHONY : src/GameManager.cpp.o
 
 src/GameManager.i: src/GameManager.cpp.i
@@ -429,7 +416,7 @@ src/GameManager.i: src/GameManager.cpp.i
 
 # target to preprocess a source file
 src/GameManager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/GameManager.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/GameManager.cpp.i
 .PHONY : src/GameManager.cpp.i
 
 src/GameManager.s: src/GameManager.cpp.s
@@ -437,7 +424,7 @@ src/GameManager.s: src/GameManager.cpp.s
 
 # target to generate assembly for a file
 src/GameManager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/GameManager.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/GameManager.cpp.s
 .PHONY : src/GameManager.cpp.s
 
 src/Mob.o: src/Mob.cpp.o
@@ -445,7 +432,6 @@ src/Mob.o: src/Mob.cpp.o
 
 # target to build an object file
 src/Mob.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Mob.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/Mob.cpp.o
 .PHONY : src/Mob.cpp.o
 
@@ -454,7 +440,6 @@ src/Mob.i: src/Mob.cpp.i
 
 # target to preprocess a source file
 src/Mob.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Mob.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/Mob.cpp.i
 .PHONY : src/Mob.cpp.i
 
@@ -463,7 +448,6 @@ src/Mob.s: src/Mob.cpp.s
 
 # target to generate assembly for a file
 src/Mob.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Mob.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/Mob.cpp.s
 .PHONY : src/Mob.cpp.s
 
@@ -472,7 +456,6 @@ src/Player.o: src/Player.cpp.o
 
 # target to build an object file
 src/Player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Player.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/Player.cpp.o
 .PHONY : src/Player.cpp.o
 
@@ -481,7 +464,6 @@ src/Player.i: src/Player.cpp.i
 
 # target to preprocess a source file
 src/Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Player.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/Player.cpp.i
 .PHONY : src/Player.cpp.i
 
@@ -490,40 +472,15 @@ src/Player.s: src/Player.cpp.s
 
 # target to generate assembly for a file
 src/Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Player.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
-
-src/Tile.o: src/Tile.cpp.o
-.PHONY : src/Tile.o
-
-# target to build an object file
-src/Tile.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Tile.cpp.o
-.PHONY : src/Tile.cpp.o
-
-src/Tile.i: src/Tile.cpp.i
-.PHONY : src/Tile.i
-
-# target to preprocess a source file
-src/Tile.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Tile.cpp.i
-.PHONY : src/Tile.cpp.i
-
-src/Tile.s: src/Tile.cpp.s
-.PHONY : src/Tile.s
-
-# target to generate assembly for a file
-src/Tile.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/Tile.cpp.s
-.PHONY : src/Tile.cpp.s
 
 src/TmxMapLoader.o: src/TmxMapLoader.cpp.o
 .PHONY : src/TmxMapLoader.o
 
 # target to build an object file
 src/TmxMapLoader.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/TmxMapLoader.cpp.o
 .PHONY : src/TmxMapLoader.cpp.o
 
 src/TmxMapLoader.i: src/TmxMapLoader.cpp.i
@@ -531,7 +488,7 @@ src/TmxMapLoader.i: src/TmxMapLoader.cpp.i
 
 # target to preprocess a source file
 src/TmxMapLoader.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/TmxMapLoader.cpp.i
 .PHONY : src/TmxMapLoader.cpp.i
 
 src/TmxMapLoader.s: src/TmxMapLoader.cpp.s
@@ -539,40 +496,254 @@ src/TmxMapLoader.s: src/TmxMapLoader.cpp.s
 
 # target to generate assembly for a file
 src/TmxMapLoader.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/TmxMapLoader.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/TmxMapLoader.cpp.s
 .PHONY : src/TmxMapLoader.cpp.s
 
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+src/core/EntityFactory.o: src/core/EntityFactory.cpp.o
+.PHONY : src/core/EntityFactory.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+src/core/EntityFactory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/core/EntityFactory.cpp.o
+.PHONY : src/core/EntityFactory.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+src/core/EntityFactory.i: src/core/EntityFactory.cpp.i
+.PHONY : src/core/EntityFactory.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+src/core/EntityFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/core/EntityFactory.cpp.i
+.PHONY : src/core/EntityFactory.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+src/core/EntityFactory.s: src/core/EntityFactory.cpp.s
+.PHONY : src/core/EntityFactory.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+src/core/EntityFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/core/EntityFactory.cpp.s
+.PHONY : src/core/EntityFactory.cpp.s
+
+src/core/GraphicsContext.o: src/core/GraphicsContext.cpp.o
+.PHONY : src/core/GraphicsContext.o
+
+# target to build an object file
+src/core/GraphicsContext.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/core/GraphicsContext.cpp.o
+.PHONY : src/core/GraphicsContext.cpp.o
+
+src/core/GraphicsContext.i: src/core/GraphicsContext.cpp.i
+.PHONY : src/core/GraphicsContext.i
+
+# target to preprocess a source file
+src/core/GraphicsContext.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/core/GraphicsContext.cpp.i
+.PHONY : src/core/GraphicsContext.cpp.i
+
+src/core/GraphicsContext.s: src/core/GraphicsContext.cpp.s
+.PHONY : src/core/GraphicsContext.s
+
+# target to generate assembly for a file
+src/core/GraphicsContext.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/core/GraphicsContext.cpp.s
+.PHONY : src/core/GraphicsContext.cpp.s
+
+src/core/WalkerDungeonGenerator.o: src/core/WalkerDungeonGenerator.cpp.o
+.PHONY : src/core/WalkerDungeonGenerator.o
+
+# target to build an object file
+src/core/WalkerDungeonGenerator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/core/WalkerDungeonGenerator.cpp.o
+.PHONY : src/core/WalkerDungeonGenerator.cpp.o
+
+src/core/WalkerDungeonGenerator.i: src/core/WalkerDungeonGenerator.cpp.i
+.PHONY : src/core/WalkerDungeonGenerator.i
+
+# target to preprocess a source file
+src/core/WalkerDungeonGenerator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/core/WalkerDungeonGenerator.cpp.i
+.PHONY : src/core/WalkerDungeonGenerator.cpp.i
+
+src/core/WalkerDungeonGenerator.s: src/core/WalkerDungeonGenerator.cpp.s
+.PHONY : src/core/WalkerDungeonGenerator.s
+
+# target to generate assembly for a file
+src/core/WalkerDungeonGenerator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/core/WalkerDungeonGenerator.cpp.s
+.PHONY : src/core/WalkerDungeonGenerator.cpp.s
+
+src/core/WanderSystem.o: src/core/WanderSystem.cpp.o
+.PHONY : src/core/WanderSystem.o
+
+# target to build an object file
+src/core/WanderSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/core/WanderSystem.cpp.o
+.PHONY : src/core/WanderSystem.cpp.o
+
+src/core/WanderSystem.i: src/core/WanderSystem.cpp.i
+.PHONY : src/core/WanderSystem.i
+
+# target to preprocess a source file
+src/core/WanderSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/core/WanderSystem.cpp.i
+.PHONY : src/core/WanderSystem.cpp.i
+
+src/core/WanderSystem.s: src/core/WanderSystem.cpp.s
+.PHONY : src/core/WanderSystem.s
+
+# target to generate assembly for a file
+src/core/WanderSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/core/WanderSystem.cpp.s
+.PHONY : src/core/WanderSystem.cpp.s
+
+src/input/InputHandler.o: src/input/InputHandler.cpp.o
+.PHONY : src/input/InputHandler.o
+
+# target to build an object file
+src/input/InputHandler.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/input/InputHandler.cpp.o
+.PHONY : src/input/InputHandler.cpp.o
+
+src/input/InputHandler.i: src/input/InputHandler.cpp.i
+.PHONY : src/input/InputHandler.i
+
+# target to preprocess a source file
+src/input/InputHandler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/input/InputHandler.cpp.i
+.PHONY : src/input/InputHandler.cpp.i
+
+src/input/InputHandler.s: src/input/InputHandler.cpp.s
+.PHONY : src/input/InputHandler.s
+
+# target to generate assembly for a file
+src/input/InputHandler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/input/InputHandler.cpp.s
+.PHONY : src/input/InputHandler.cpp.s
+
+src/rendering/Renderer.o: src/rendering/Renderer.cpp.o
+.PHONY : src/rendering/Renderer.o
+
+# target to build an object file
+src/rendering/Renderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/rendering/Renderer.cpp.o
+.PHONY : src/rendering/Renderer.cpp.o
+
+src/rendering/Renderer.i: src/rendering/Renderer.cpp.i
+.PHONY : src/rendering/Renderer.i
+
+# target to preprocess a source file
+src/rendering/Renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/rendering/Renderer.cpp.i
+.PHONY : src/rendering/Renderer.cpp.i
+
+src/rendering/Renderer.s: src/rendering/Renderer.cpp.s
+.PHONY : src/rendering/Renderer.s
+
+# target to generate assembly for a file
+src/rendering/Renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/rendering/Renderer.cpp.s
+.PHONY : src/rendering/Renderer.cpp.s
+
+src/ui/EntityInspectorWindow.o: src/ui/EntityInspectorWindow.cpp.o
+.PHONY : src/ui/EntityInspectorWindow.o
+
+# target to build an object file
+src/ui/EntityInspectorWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/ui/EntityInspectorWindow.cpp.o
+.PHONY : src/ui/EntityInspectorWindow.cpp.o
+
+src/ui/EntityInspectorWindow.i: src/ui/EntityInspectorWindow.cpp.i
+.PHONY : src/ui/EntityInspectorWindow.i
+
+# target to preprocess a source file
+src/ui/EntityInspectorWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/ui/EntityInspectorWindow.cpp.i
+.PHONY : src/ui/EntityInspectorWindow.cpp.i
+
+src/ui/EntityInspectorWindow.s: src/ui/EntityInspectorWindow.cpp.s
+.PHONY : src/ui/EntityInspectorWindow.s
+
+# target to generate assembly for a file
+src/ui/EntityInspectorWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/ui/EntityInspectorWindow.cpp.s
+.PHONY : src/ui/EntityInspectorWindow.cpp.s
+
+src/ui/PerformanceWindow.o: src/ui/PerformanceWindow.cpp.o
+.PHONY : src/ui/PerformanceWindow.o
+
+# target to build an object file
+src/ui/PerformanceWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/ui/PerformanceWindow.cpp.o
+.PHONY : src/ui/PerformanceWindow.cpp.o
+
+src/ui/PerformanceWindow.i: src/ui/PerformanceWindow.cpp.i
+.PHONY : src/ui/PerformanceWindow.i
+
+# target to preprocess a source file
+src/ui/PerformanceWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/ui/PerformanceWindow.cpp.i
+.PHONY : src/ui/PerformanceWindow.cpp.i
+
+src/ui/PerformanceWindow.s: src/ui/PerformanceWindow.cpp.s
+.PHONY : src/ui/PerformanceWindow.s
+
+# target to generate assembly for a file
+src/ui/PerformanceWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/ui/PerformanceWindow.cpp.s
+.PHONY : src/ui/PerformanceWindow.cpp.s
+
+src/ui/TmxLoaderWindow.o: src/ui/TmxLoaderWindow.cpp.o
+.PHONY : src/ui/TmxLoaderWindow.o
+
+# target to build an object file
+src/ui/TmxLoaderWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/ui/TmxLoaderWindow.cpp.o
+.PHONY : src/ui/TmxLoaderWindow.cpp.o
+
+src/ui/TmxLoaderWindow.i: src/ui/TmxLoaderWindow.cpp.i
+.PHONY : src/ui/TmxLoaderWindow.i
+
+# target to preprocess a source file
+src/ui/TmxLoaderWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/ui/TmxLoaderWindow.cpp.i
+.PHONY : src/ui/TmxLoaderWindow.cpp.i
+
+src/ui/TmxLoaderWindow.s: src/ui/TmxLoaderWindow.cpp.s
+.PHONY : src/ui/TmxLoaderWindow.s
+
+# target to generate assembly for a file
+src/ui/TmxLoaderWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/ui/TmxLoaderWindow.cpp.s
+.PHONY : src/ui/TmxLoaderWindow.cpp.s
+
+src/ui/WalkerDungeonWindow.o: src/ui/WalkerDungeonWindow.cpp.o
+.PHONY : src/ui/WalkerDungeonWindow.o
+
+# target to build an object file
+src/ui/WalkerDungeonWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/ui/WalkerDungeonWindow.cpp.o
+.PHONY : src/ui/WalkerDungeonWindow.cpp.o
+
+src/ui/WalkerDungeonWindow.i: src/ui/WalkerDungeonWindow.cpp.i
+.PHONY : src/ui/WalkerDungeonWindow.i
+
+# target to preprocess a source file
+src/ui/WalkerDungeonWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/ui/WalkerDungeonWindow.cpp.i
+.PHONY : src/ui/WalkerDungeonWindow.cpp.i
+
+src/ui/WalkerDungeonWindow.s: src/ui/WalkerDungeonWindow.cpp.s
+.PHONY : src/ui/WalkerDungeonWindow.s
+
+# target to generate assembly for a file
+src/ui/WalkerDungeonWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/ui/WalkerDungeonWindow.cpp.s
+.PHONY : src/ui/WalkerDungeonWindow.cpp.s
 
 src/walkerdungeon.o: src/walkerdungeon.cpp.o
 .PHONY : src/walkerdungeon.o
 
 # target to build an object file
 src/walkerdungeon.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dungeon_example.dir/build.make CMakeFiles/dungeon_example.dir/src/walkerdungeon.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/walkerdungeon.cpp.o
 .PHONY : src/walkerdungeon.cpp.o
 
@@ -581,8 +752,6 @@ src/walkerdungeon.i: src/walkerdungeon.cpp.i
 
 # target to preprocess a source file
 src/walkerdungeon.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dungeon_example.dir/build.make CMakeFiles/dungeon_example.dir/src/walkerdungeon.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/walkerdungeon.cpp.i
 .PHONY : src/walkerdungeon.cpp.i
 
@@ -591,8 +760,6 @@ src/walkerdungeon.s: src/walkerdungeon.cpp.s
 
 # target to generate assembly for a file
 src/walkerdungeon.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/scheduler_demo.dir/build.make CMakeFiles/scheduler_demo.dir/src/walkerdungeon.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dungeon_example.dir/build.make CMakeFiles/dungeon_example.dir/src/walkerdungeon.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/collision_test.dir/build.make CMakeFiles/collision_test.dir/src/walkerdungeon.cpp.s
 .PHONY : src/walkerdungeon.cpp.s
 
@@ -609,32 +776,34 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... collision_test"
-	@echo "... dungeon_example"
-	@echo "... entt_event_example"
-	@echo "... scheduler_demo"
-	@echo "... scheduler_example"
 	@echo "... tmxparser"
 	@echo "... examples/CollisionTest.o"
 	@echo "... examples/CollisionTest.i"
 	@echo "... examples/CollisionTest.s"
-	@echo "... examples/EnttEventExample.o"
-	@echo "... examples/EnttEventExample.i"
-	@echo "... examples/EnttEventExample.s"
-	@echo "... examples/SchedulerExample.o"
-	@echo "... examples/SchedulerExample.i"
-	@echo "... examples/SchedulerExample.s"
 	@echo "... examples/mains/collision_test_main.o"
 	@echo "... examples/mains/collision_test_main.i"
 	@echo "... examples/mains/collision_test_main.s"
-	@echo "... examples/mains/dungeon_example_main.o"
-	@echo "... examples/mains/dungeon_example_main.i"
-	@echo "... examples/mains/dungeon_example_main.s"
-	@echo "... examples/mains/entt_event_example_main.o"
-	@echo "... examples/mains/entt_event_example_main.i"
-	@echo "... examples/mains/entt_event_example_main.s"
-	@echo "... examples/mains/scheduler_example_main.o"
-	@echo "... examples/mains/scheduler_example_main.i"
-	@echo "... examples/mains/scheduler_example_main.s"
+	@echo "... externals/imgui/backends/imgui_impl_sdl2.o"
+	@echo "... externals/imgui/backends/imgui_impl_sdl2.i"
+	@echo "... externals/imgui/backends/imgui_impl_sdl2.s"
+	@echo "... externals/imgui/backends/imgui_impl_sdlrenderer2.o"
+	@echo "... externals/imgui/backends/imgui_impl_sdlrenderer2.i"
+	@echo "... externals/imgui/backends/imgui_impl_sdlrenderer2.s"
+	@echo "... externals/imgui/imgui.o"
+	@echo "... externals/imgui/imgui.i"
+	@echo "... externals/imgui/imgui.s"
+	@echo "... externals/imgui/imgui_demo.o"
+	@echo "... externals/imgui/imgui_demo.i"
+	@echo "... externals/imgui/imgui_demo.s"
+	@echo "... externals/imgui/imgui_draw.o"
+	@echo "... externals/imgui/imgui_draw.i"
+	@echo "... externals/imgui/imgui_draw.s"
+	@echo "... externals/imgui/imgui_tables.o"
+	@echo "... externals/imgui/imgui_tables.i"
+	@echo "... externals/imgui/imgui_tables.s"
+	@echo "... externals/imgui/imgui_widgets.o"
+	@echo "... externals/imgui/imgui_widgets.i"
+	@echo "... externals/imgui/imgui_widgets.s"
 	@echo "... src/GameManager.o"
 	@echo "... src/GameManager.i"
 	@echo "... src/GameManager.s"
@@ -644,15 +813,39 @@ help:
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
-	@echo "... src/Tile.o"
-	@echo "... src/Tile.i"
-	@echo "... src/Tile.s"
 	@echo "... src/TmxMapLoader.o"
 	@echo "... src/TmxMapLoader.i"
 	@echo "... src/TmxMapLoader.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... src/core/EntityFactory.o"
+	@echo "... src/core/EntityFactory.i"
+	@echo "... src/core/EntityFactory.s"
+	@echo "... src/core/GraphicsContext.o"
+	@echo "... src/core/GraphicsContext.i"
+	@echo "... src/core/GraphicsContext.s"
+	@echo "... src/core/WalkerDungeonGenerator.o"
+	@echo "... src/core/WalkerDungeonGenerator.i"
+	@echo "... src/core/WalkerDungeonGenerator.s"
+	@echo "... src/core/WanderSystem.o"
+	@echo "... src/core/WanderSystem.i"
+	@echo "... src/core/WanderSystem.s"
+	@echo "... src/input/InputHandler.o"
+	@echo "... src/input/InputHandler.i"
+	@echo "... src/input/InputHandler.s"
+	@echo "... src/rendering/Renderer.o"
+	@echo "... src/rendering/Renderer.i"
+	@echo "... src/rendering/Renderer.s"
+	@echo "... src/ui/EntityInspectorWindow.o"
+	@echo "... src/ui/EntityInspectorWindow.i"
+	@echo "... src/ui/EntityInspectorWindow.s"
+	@echo "... src/ui/PerformanceWindow.o"
+	@echo "... src/ui/PerformanceWindow.i"
+	@echo "... src/ui/PerformanceWindow.s"
+	@echo "... src/ui/TmxLoaderWindow.o"
+	@echo "... src/ui/TmxLoaderWindow.i"
+	@echo "... src/ui/TmxLoaderWindow.s"
+	@echo "... src/ui/WalkerDungeonWindow.o"
+	@echo "... src/ui/WalkerDungeonWindow.i"
+	@echo "... src/ui/WalkerDungeonWindow.s"
 	@echo "... src/walkerdungeon.o"
 	@echo "... src/walkerdungeon.i"
 	@echo "... src/walkerdungeon.s"

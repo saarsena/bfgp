@@ -9,7 +9,8 @@
 
 class WalkerDungeon {
 public:
-  WalkerDungeon(int totalFloorCount, int minHall, int maxHall, int roomDim);
+  WalkerDungeon(int totalFloorCount, int minHall, int maxHall, int roomDim,
+                int tileWidth = 16, int tileHeight = 16);
 
   // Dungeon generation functions
   void GenerateRandomWalker();
@@ -23,6 +24,10 @@ public:
   // not floors.
   std::vector<SDL_Point> GetWallList() const;
 
+  // Getters for tile dimensions
+  int GetTileWidth() const { return tileWidth; }
+  int GetTileHeight() const { return tileHeight; }
+
 private:
   // Helper functions
   void RandomRoom(const SDL_Point &pos);
@@ -34,6 +39,8 @@ private:
   int minHall = 10;
   int maxHall = 20;
   int roomDim = 10;
+  int tileWidth = 16;
+  int tileHeight = 16;
 
   // Container for floor positions
   std::vector<SDL_Point> floorList;

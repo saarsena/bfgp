@@ -1,15 +1,45 @@
 #include "../include/core/GameManager.h"
+#include "../deps/tmxparser/include/TmxImage.h"
+#include "../deps/tmxparser/include/TmxLayer.h"
+#include "../deps/tmxparser/include/TmxObject.h"
+#include "../deps/tmxparser/include/TmxObjectGroup.h"
+#include "../deps/tmxparser/include/TmxTileLayer.h"
+#include "../deps/tmxparser/include/TmxTileset.h"
 #include "../include/events/GameEvent.h"
-#include "TmxImage.h"
-#include "TmxLayer.h"
-#include "TmxObject.h"
-#include "TmxObjectGroup.h"
-#include "TmxTileLayer.h"
-#include "TmxTileset.h"
 #include <iostream>
 
 GameManager::GameManager()
-    : window(nullptr), renderer(nullptr), isRunning(false), player(nullptr) {}
+    : window(nullptr), renderer(nullptr), isRunning(false), mapLoader(nullptr),
+      player(nullptr) {
+  if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO) < 0) {
+    std::cerr << "SDL initialization failed: " << SDL_GetError() << std::endl;
+    return;
+  }
+
+  // Initialize SDL_image
+  if (!(IMG_Init(IMG_INIT_PNG) & IMG_INIT_PNG)) {
+    std::cerr << "SDL_image initialization failed: " << IMG_GetError()
+              << std::endl;
+    return;
+  }
+
+  // Initialize SDL_ttf
+  if (TTF_Init() < 0) {
+    std::cerr << "SDL_ttf initialization failed: " << TTF_GetError()
+              << std::endl;
+    return;
+  }
+
+  // Initialize SDL_mixer
+  if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) < 0) {
+    std::cerr << "SDL_mixer initialization failed: " << Mix_GetError()
+              << std::endl;
+    return;
+  }
+
+  setupEventHandlers();
+  isRunning = true;
+}
 
 GameManager::~GameManager() { clean(); }
 
@@ -23,7 +53,8 @@ void GameManager::setupEventHandlers() {
   // You can add more event handlers here
 }
 
-bool GameManager::init() {
+bool GameManager::init(SDL_Window *existingWindow,
+                       SDL_Renderer *existingRenderer) {
   if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO) < 0)
     return false;
   if (!IMG_Init(IMG_INIT_PNG))
@@ -33,110 +64,11 @@ bool GameManager::init() {
   if (Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048) < 0)
     return false;
 
-  // Load the map first to determine window size
-  if (!mapLoader.loadMap("assets/tg_tiled_example.tmx", registry)) {
-    std::cerr << "Failed to load map!" << std::endl;
-    return false;
-  }
+  window = existingWindow;
+  renderer = existingRenderer;
 
-  // Calculate window size based on map dimensions
-  int mapWidth = mapLoader.getWidth() * mapLoader.getTileWidth();
-  int mapHeight = mapLoader.getHeight() * mapLoader.getTileHeight();
-
-  window = SDL_CreateWindow("Tiny Galaxy", SDL_WINDOWPOS_CENTERED,
-                            SDL_WINDOWPOS_CENTERED, mapWidth, mapHeight, 0);
-  if (!window)
-    return false;
-
-  renderer = SDL_CreateRenderer(window, -1, SDL_RENDERER_ACCELERATED);
-  if (!renderer)
-    return false;
-
-  // Load tileset textures
-  if (!loadTilesets()) {
-    std::cerr << "Failed to load tilesets!" << std::endl;
-    return false;
-  }
-
-  // Find player spawn location from the map
-  float spawnX = 5; // Default position if spawn point not found
-  float spawnY = 5;
-
-  // Search for object with name "player spawn" or type "player_spawn"
-  bool foundSpawn = false;
-  for (int i = 0; i < mapLoader.getMap().GetNumObjectGroups(); ++i) {
-    const Tmx::ObjectGroup *group = mapLoader.getMap().GetObjectGroup(i);
-    for (int j = 0; j < group->GetNumObjects(); ++j) {
-      const Tmx::Object *obj = group->GetObject(j);
-      if (obj->GetName() == "player spawn" ||
-          obj->GetType() == "player_spawn" || obj->GetId() == 1) {
-        spawnX = obj->GetX() / mapLoader.getTileWidth();
-        spawnY = obj->GetY() / mapLoader.getTileHeight();
-        foundSpawn = true;
-        std::cout << "Found player spawn at tile position: " << spawnX << ","
-                  << spawnY << std::endl;
-        break;
-      }
-    }
-    if (foundSpawn)
-      break;
-  }
-
-  // Create player texture from tile ID 12 in the monsters tileset
-  SDL_Texture *playerTexture = nullptr;
-
-  // Find the monsters tileset specifically
-  const Tmx::Tileset *monstersTileset = nullptr;
-  for (int i = 0; i < mapLoader.getNumTilesets(); ++i) {
-    const Tmx::Tileset *tileset = mapLoader.getTileset(i);
-    if (tileset->GetName() == "tiny_galaxy_monsters") {
-      monstersTileset = tileset;
-      break;
-    }
-  }
-
-  if (monstersTileset) {
-    // Get the texture for the monsters tileset
-    SDL_Texture *tilesetTexture = tilesetTextures["tiny_galaxy_monsters"];
-    if (tilesetTexture) {
-      // We want local ID 12 from the monsters tileset
-      int localId = 12;
-      int tilesetWidth = monstersTileset->GetImage()->GetWidth() /
-                         monstersTileset->GetTileWidth();
-
-      // Calculate source rectangle for the tile
-      SDL_Rect src;
-      src.x = (localId % tilesetWidth) * monstersTileset->GetTileWidth();
-      src.y = (localId / tilesetWidth) * monstersTileset->GetTileHeight();
-      src.w = monstersTileset->GetTileWidth();
-      src.h = monstersTileset->GetTileHeight();
-
-      // Set up a render target for the player texture
-      SDL_Texture *tempTexture =
-          SDL_CreateTexture(renderer, SDL_PIXELFORMAT_RGBA8888,
-                            SDL_TEXTUREACCESS_TARGET, src.w, src.h);
-
-      // Enable alpha blending on the texture
-      SDL_SetTextureBlendMode(tempTexture, SDL_BLENDMODE_BLEND);
-
-      // Copy the tile to the player texture
-      SDL_SetRenderTarget(renderer, tempTexture);
-      SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0);
-      SDL_RenderClear(renderer);
-      SDL_RenderCopy(renderer, tilesetTexture, &src, nullptr);
-      SDL_SetRenderTarget(renderer, nullptr);
-
-      playerTexture = tempTexture;
-      std::cout << "Created player texture from monsters tileset, local ID 12"
-                << std::endl;
-    }
-  } else {
-    std::cout << "Could not find monsters tileset!" << std::endl;
-  }
-
-  // Position player at the spawn location
-  player = new Player(static_cast<int>(spawnX), static_cast<int>(spawnY),
-                      playerTexture, this->registry, mapLoader.getTileWidth());
+  // Initialize TmxMapLoader with the renderer
+  mapLoader = new TmxMapLoader(renderer);
 
   // Set up event handlers
   setupEventHandlers();
@@ -146,8 +78,8 @@ bool GameManager::init() {
 }
 
 bool GameManager::loadTilesets() {
-  for (int i = 0; i < mapLoader.getNumTilesets(); ++i) {
-    const Tmx::Tileset *tileset = mapLoader.getTileset(i);
+  for (int i = 0; i < mapLoader->getNumTilesets(); ++i) {
+    const Tmx::Tileset *tileset = mapLoader->getTileset(i);
     std::string imagePath = "assets/" + tileset->GetImage()->GetSource();
 
     SDL_Surface *tempSurface = IMG_Load(imagePath.c_str());
@@ -189,7 +121,7 @@ SDL_Rect GameManager::getTileSourceRect(int gid, const Tmx::Tileset *tileset) {
 }
 
 void GameManager::renderLayer(int layerIndex) {
-  const Tmx::Layer *layer = mapLoader.getLayer(layerIndex);
+  const Tmx::Layer *layer = mapLoader->getLayer(layerIndex);
 
   // Skip non-tile layers or invisible layers
   if (layer->GetLayerType() != Tmx::TMX_LAYERTYPE_TILE || !layer->IsVisible()) {
@@ -213,8 +145,8 @@ void GameManager::renderLayer(int layerIndex) {
 
       // Find which tileset this tile belongs to
       const Tmx::Tileset *tileset = nullptr;
-      for (int i = mapLoader.getNumTilesets() - 1; i >= 0; --i) {
-        const Tmx::Tileset *ts = mapLoader.getTileset(i);
+      for (int i = mapLoader->getNumTilesets() - 1; i >= 0; --i) {
+        const Tmx::Tileset *ts = mapLoader->getTileset(i);
         if (gid >= ts->GetFirstGid()) {
           tileset = ts;
           break;
@@ -253,7 +185,7 @@ void GameManager::renderLayer(int layerIndex) {
 
 void GameManager::renderMap() {
   // Draw all layers in order
-  for (int i = 0; i < mapLoader.getNumLayers(); ++i) {
+  for (int i = 0; i < mapLoader->getNumLayers(); ++i) {
     renderLayer(i);
   }
 }
@@ -280,7 +212,7 @@ void GameManager::update() {
   player->update();
 
   // Check for map hot reloading
-  if (mapLoader.isMapModified() && mapLoader.reloadIfModified()) {
+  if (mapLoader->isMapModified() && mapLoader->reloadIfModified()) {
     std::cout << "Map was hot-reloaded!" << std::endl;
     // Reload tilesets if needed
     loadTilesets();
@@ -301,15 +233,20 @@ void GameManager::render() {
 }
 
 void GameManager::clean() {
-  // Free tileset textures
+  // Clean up textures
   for (auto &[name, texture] : tilesetTextures) {
-    SDL_DestroyTexture(texture);
+    if (texture) {
+      SDL_DestroyTexture(texture);
+    }
   }
   tilesetTextures.clear();
 
   delete player;
+  delete mapLoader;
+
   SDL_DestroyRenderer(renderer);
   SDL_DestroyWindow(window);
+
   Mix_Quit();
   TTF_Quit();
   IMG_Quit();

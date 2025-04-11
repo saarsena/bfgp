@@ -8,7 +8,6 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 # Import target "tmxparser" for configuration ""
 set_property(TARGET tmxparser APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(tmxparser PROPERTIES
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_NOCONFIG "tinyxml2"
   IMPORTED_LOCATION_NOCONFIG "${_IMPORT_PREFIX}/lib64/libtmxparser.so.2.1.0"
   IMPORTED_SONAME_NOCONFIG "libtmxparser.so.2"
   )

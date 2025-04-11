@@ -5,9 +5,16 @@
 
 // Constructor: Initialize parameters and seed the RNG.
 WalkerDungeon::WalkerDungeon(int totalFloorCount, int minHall, int maxHall,
-                             int roomDim)
+                             int roomDim, int tileWidth, int tileHeight)
     : totalFloorCount(totalFloorCount), minHall(minHall), maxHall(maxHall),
-      roomDim(roomDim), rng(std::random_device()()) {}
+      roomDim(roomDim), tileWidth(tileWidth), tileHeight(tileHeight),
+      rng(std::random_device()()) {
+  // Adjust room dimensions based on tile size
+  this->roomDim = (roomDim * 16) /
+                  tileWidth; // Scale room size relative to default 16px tiles
+  this->minHall = (minHall * 16) / tileWidth; // Scale hall lengths
+  this->maxHall = (maxHall * 16) / tileWidth;
+}
 
 // Returns the generated floor positions
 const std::vector<SDL_Point> &WalkerDungeon::GetFloorList() const {

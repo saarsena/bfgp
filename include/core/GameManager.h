@@ -9,42 +9,45 @@
 #include <SDL_ttf.h>
 #include <entt/entt.hpp>
 #include <map>
+#include <unordered_map>
 #include <vector>
 
 class GameManager {
 public:
   GameManager();
   ~GameManager();
+
   bool init();
+  bool init(SDL_Window *existingWindow, SDL_Renderer *existingRenderer);
+  void setWindow(SDL_Window *window) { this->window = window; }
+  void setRenderer(SDL_Renderer *renderer) {
+    this->renderer = renderer;
+    if (mapLoader) {
+      mapLoader->setRenderer(renderer);
+    }
+  }
   void run();
   void clean();
-
-private:
-  SDL_Window *window;
-  SDL_Renderer *renderer;
-  bool isRunning;
-
-  // Tilemap integration
-  TmxMapLoader mapLoader;
-  std::map<std::string, SDL_Texture *> tilesetTextures;
-
-  // Event system
-  EventBus eventBus;
-  entt::registry registry;
-
-  std::vector<Tile> tiles;
-  Player *player;
-
   void handleEvents();
   void update();
   void render();
+  bool isGameRunning() const { return isRunning; }
+  SDL_Window *getWindow() const { return window; }
+  SDL_Renderer *getRenderer() const { return renderer; }
+  TmxMapLoader *getMapLoader() const { return mapLoader; }
 
-  // Tilemap rendering functions
+private:
+  void setupEventHandlers();
   bool loadTilesets();
+  SDL_Rect getTileSourceRect(int gid, const Tmx::Tileset *tileset);
   void renderLayer(int layerIndex);
   void renderMap();
-  SDL_Rect getTileSourceRect(int gid, const Tmx::Tileset *tileset);
 
-  // Event handlers setup
-  void setupEventHandlers();
+  SDL_Window *window;
+  SDL_Renderer *renderer;
+  bool isRunning;
+  TmxMapLoader *mapLoader;
+  Player *player;
+  std::unordered_map<std::string, SDL_Texture *> tilesetTextures;
+  EventBus eventBus;
 };
