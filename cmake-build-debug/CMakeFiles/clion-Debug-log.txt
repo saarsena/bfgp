@@ -1,0 +1,30 @@
+/home/saarsena/Applications/clion-2025.1/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/saarsena/Applications/clion-2025.1/bin/ninja/linux/x64/ninja -G Ninja -S /home/saarsena/Dev/bfgp -B /home/saarsena/Dev/bfgp/cmake-build-debug
+-- The C compiler identification is GNU 15.0.1
+-- The CXX compiler identification is GNU 15.0.1
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.3.0")
+-- Checking for module 'sdl2'
+--   Found sdl2, version 2.32.54
+-- Checking for module 'SDL2_image'
+--   Found SDL2_image, version 2.8.8
+-- Checking for module 'SDL2_ttf'
+--   Found SDL2_ttf, version 2.22.0
+-- Checking for module 'SDL2_mixer'
+--   Found SDL2_mixer, version 2.8.1
+Configuring tmxparser version 
+-- Found Git: /usr/bin/git (found version "2.49.0")
+-- Checking for module 'tinyxml2'
+--   Found tinyxml2, version 10.0.0
+-- Found ZLIB: /usr/lib64/libz.so (found version "1.3.1")
+-- Configuring done (1.0s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/saarsena/Dev/bfgp/cmake-build-debug

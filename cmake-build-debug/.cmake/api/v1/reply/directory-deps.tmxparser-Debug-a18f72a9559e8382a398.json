@@ -1,0 +1,140 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"deps/tmxparser/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 146,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 150,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 153,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 159,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 165,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 180,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				{
+					"from" : "cmake-build-debug/deps/tmxparser/include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				{
+					"from" : "deps/tmxparser/include",
+					"to" : "."
+				}
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib64",
+			"paths" : 
+			[
+				"deps/tmxparser/libtmxparser.a"
+			],
+			"targetId" : "tmxparser::@e49d30f411812ce95fb4",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "lib64/cmake/tmxparser",
+			"exportName" : "tmxparserTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "tmxparser::@e49d30f411812ce95fb4",
+					"index" : 1
+				}
+			],
+			"paths" : 
+			[
+				"deps/tmxparser/CMakeFiles/Export/b0641fc8fb531a5c6a7ad184e3a2b936/tmxparserTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib64/pkgconfig",
+			"paths" : 
+			[
+				"cmake-build-debug/deps/tmxparser/tmxparser.pc"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib64/cmake/tmxparser",
+			"paths" : 
+			[
+				"cmake-build-debug/deps/tmxparser/tmxparserConfig.cmake",
+				"cmake-build-debug/deps/tmxparser/tmxparserConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "deps/tmxparser",
+		"source" : "deps/tmxparser"
+	}
+}

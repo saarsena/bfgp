@@ -1,0 +1,14 @@
+/home/saarsena/Dev/bfgp/cmake-build-debug/CMakeFiles/collision_test.dir
+/home/saarsena/Dev/bfgp/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/saarsena/Dev/bfgp/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/saarsena/Dev/bfgp/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/saarsena/Dev/bfgp/cmake-build-debug/CMakeFiles/install.dir
+/home/saarsena/Dev/bfgp/cmake-build-debug/CMakeFiles/install/local.dir
+/home/saarsena/Dev/bfgp/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/saarsena/Dev/bfgp/cmake-build-debug/deps/tmxparser/CMakeFiles/tmxparser.dir
+/home/saarsena/Dev/bfgp/cmake-build-debug/deps/tmxparser/CMakeFiles/edit_cache.dir
+/home/saarsena/Dev/bfgp/cmake-build-debug/deps/tmxparser/CMakeFiles/rebuild_cache.dir
+/home/saarsena/Dev/bfgp/cmake-build-debug/deps/tmxparser/CMakeFiles/list_install_components.dir
+/home/saarsena/Dev/bfgp/cmake-build-debug/deps/tmxparser/CMakeFiles/install.dir
+/home/saarsena/Dev/bfgp/cmake-build-debug/deps/tmxparser/CMakeFiles/install/local.dir
+/home/saarsena/Dev/bfgp/cmake-build-debug/deps/tmxparser/CMakeFiles/install/strip.dir

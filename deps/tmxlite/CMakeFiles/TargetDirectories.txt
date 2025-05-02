@@ -1,0 +1,7 @@
+/home/saarsena/Dev/bfgp/deps/tmxlite/CMakeFiles/tmxlite.dir
+/home/saarsena/Dev/bfgp/deps/tmxlite/CMakeFiles/edit_cache.dir
+/home/saarsena/Dev/bfgp/deps/tmxlite/CMakeFiles/rebuild_cache.dir
+/home/saarsena/Dev/bfgp/deps/tmxlite/CMakeFiles/list_install_components.dir
+/home/saarsena/Dev/bfgp/deps/tmxlite/CMakeFiles/install.dir
+/home/saarsena/Dev/bfgp/deps/tmxlite/CMakeFiles/install/local.dir
+/home/saarsena/Dev/bfgp/deps/tmxlite/CMakeFiles/install/strip.dir

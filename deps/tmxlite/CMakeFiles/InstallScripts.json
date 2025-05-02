@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/saarsena/Dev/bfgp/deps/tmxlite/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

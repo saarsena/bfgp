@@ -1,0 +1,47 @@
+# === OS/Editor/System ===
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.swn
+*.bak
+*.cache
+
+# === Build Artifacts ===
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+compile_commands.json
+*.o
+*.obj
+*.so
+*.a
+*.d
+
+# === Logs / Dumps ===
+*.log
+*.tmp
+*.core
+
+# === User Config ===
+config/config.h
+
+# === Generated Links ===
+/compile_commands.json
+
+# === Ignore Backup/Test Files ===
+*.backup
+what.txt
+todo.txt
+tree.txt
+
+# === Optional: Ignore asset cache duplicates (optional) ===
+/assets/*.tmx~
+/assets/*.tsx~
+
+# === Ignore Cursor-specific files if applicable ===
+.cursor-config.json
+
+
